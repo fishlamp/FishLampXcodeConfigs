@@ -9,4 +9,3 @@
 #include "FishLampXcodeConfigs/Configs/FishLampIncludedConfig-OSX-64.xcconfig"
 #include "FishLampXcodeConfigs/Configs/FishLampIncludedConfig-ARC.xcconfig"
 #include "FishLampXcodeConfigs/Configs/FishLampIncludedConfig-Preprocessor.xcconfig"
-#include "FishLampXcodeConfigs/Configs/FishLampPaths.xcconfig"
