@@ -6,6 +6,6 @@
 //
 //
 
-#include "fishlamp-xcodeconfigs/Configs/FishLampIncludedConfig-iOS.xcconfig"
-#include "fishlamp-xcodeconfigs/Configs/FishLampIncludedConfig-ARC.xcconfig"
-#include "fishlamp-xcodeconfigs/Configs/FishLampIncludedConfig-Preprocessor.xcconfig"
+#include "FishLampXcodeConfigs/Configs/FishLampIncludedConfig-iOS.xcconfig"
+#include "FishLampXcodeConfigs/Configs/FishLampIncludedConfig-ARC.xcconfig"
+#include "FishLampXcodeConfigs/Configs/FishLampIncludedConfig-Preprocessor.xcconfig"

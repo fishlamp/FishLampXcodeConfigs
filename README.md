@@ -1,2 +1,2 @@
-fishlamp-xcodeconfigs
+FishLampXcodeConfigs
 =====================

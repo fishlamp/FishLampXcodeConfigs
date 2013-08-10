@@ -6,8 +6,8 @@
 //
 //
 
-#include "fishlamp-xcodeconfigs/Configs/FishLampIncludedConfig-OSX-Universal.xcconfig"
-#include "fishlamp-xcodeconfigs/Configs/FishLampIncludedConfig-MRC.xcconfig"
-#include "fishlamp-xcodeconfigs/Configs/FishLampIncludedConfig-Preprocessor.xcconfig"
-#include "fishlamp-xcodeconfigs/Configs/FishLampPaths.xcconfig"
+#include "FishLampXcodeConfigs/Configs/FishLampIncludedConfig-OSX-Universal.xcconfig"
+#include "FishLampXcodeConfigs/Configs/FishLampIncludedConfig-MRC.xcconfig"
+#include "FishLampXcodeConfigs/Configs/FishLampIncludedConfig-Preprocessor.xcconfig"
+#include "FishLampXcodeConfigs/Configs/FishLampPaths.xcconfig"
 

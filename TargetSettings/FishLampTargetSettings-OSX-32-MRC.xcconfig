@@ -7,6 +7,6 @@
 //  The FishLamp Framework is released under the MIT License: http://fishlamp.com/license 
 //
 
-#include "fishlamp-xcodeconfigs/Configs/FishLampIncludedConfig-OSX-32.xcconfig"
-#include "fishlamp-xcodeconfigs/Configs/FishLampIncludedConfig-MRC.xcconfig"
-#include "fishlamp-xcodeconfigs/Configs/FishLampIncludedConfig-Preprocessor.xcconfig"
+#include "FishLampXcodeConfigs/Configs/FishLampIncludedConfig-OSX-32.xcconfig"
+#include "FishLampXcodeConfigs/Configs/FishLampIncludedConfig-MRC.xcconfig"
+#include "FishLampXcodeConfigs/Configs/FishLampIncludedConfig-Preprocessor.xcconfig"
