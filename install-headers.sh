@@ -25,15 +25,18 @@ fi
 mkdir -p "$dest"
 
 function copyHeadersInDir() {
-    cd "$1"
-    files=`find . -name "*.h"`
+    dir="$1"
+    if [ -d "$dir" ]; then
+        cd "$1"
+        files=`find . -name "*.h"`
 
-    for file in $files; do
-        filename=`basename "$file"`
-        destpath="$dest/$filename"
-        echo "copied $file to $destpath"
-        cp "$file" "$destpath"
-    done
+        for file in $files; do
+            filename=`basename "$file"`
+            destpath="$dest/$filename"
+            echo "copied $file to $destpath"
+            cp "$file" "$destpath"
+        done
+    fi
 }
 
 copyHeadersInDir "$PROJECT_DIR/Classes"
