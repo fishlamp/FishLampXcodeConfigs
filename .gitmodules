@@ -1,0 +1,3 @@
+[submodule "Piecemeal-Scripts"]
+	path = Piecemeal-Scripts
+	url = https://github.com/piecemeal/Piecemeal-Scripts
