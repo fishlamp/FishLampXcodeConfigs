@@ -23,4 +23,4 @@ fi
 
 git submodule update --init --recursive
 
-py Piecemeal-Scripts/NewProjectFromTemplate.py ProjectTemplate "$destPath" "$projectName" "$subFolderName"
+python Piecemeal-Scripts/Scripts/Utils/NewProjectFromTemplate.py ProjectTemplate "$1" "$2" "$3"

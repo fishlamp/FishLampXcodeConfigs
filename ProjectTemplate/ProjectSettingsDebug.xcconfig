@@ -7,4 +7,4 @@
 //  This file is released under the MIT License: http://fishlamp.com/license 
 //
 
-#include "FishLampXcodeConfigs/ProjectSettings/FishLampProjectSettingsDebug.xcconfig"
+#include "Piecemeal-XcodeConfigs/ProjectSettings/Piecemeal-ProjectSettingsDebug.xcconfig"
