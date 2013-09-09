@@ -25,6 +25,25 @@
 		};
 /* End PBXAggregateTarget section */
 
+/* Begin PBXBuildFile section */
+		2712D93017DE30EF007327C0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2727D21017DE2E110069F9D2 /* Foundation.framework */; };
+		2712D94017DE310C007327C0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2727D21017DE2E110069F9D2 /* Foundation.framework */; };
+		2712D95017DE311F007327C0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2727D21017DE2E110069F9D2 /* Foundation.framework */; };
+		2712D96017DE3142007327C0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2727D21017DE2E110069F9D2 /* Foundation.framework */; };
+		2712D96117DE3142007327C0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2727D24E17DE2EAA0069F9D2 /* CoreGraphics.framework */; };
+		2712D96217DE3142007327C0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2727D25017DE2EAA0069F9D2 /* UIKit.framework */; };
+		2712D9AF17DE360D007327C0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2712D9A717DE360D007327C0 /* AppDelegate.m */; };
+		2712D9B017DE360D007327C0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2712D9A817DE360D007327C0 /* InfoPlist.strings */; };
+		2712D9B117DE360D007327C0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2712D9AA17DE360D007327C0 /* Images.xcassets */; };
+		2712D9B217DE360D007327C0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2712D9AB17DE360D007327C0 /* main.m */; };
+		2712D9B317DE360D007327C0 /* TEMPLATE-Test-iOS-ARC-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2712D9AC17DE360D007327C0 /* TEMPLATE-Test-iOS-ARC-Info.plist */; };
+		2712D9BD17DE3632007327C0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2712D9B617DE3632007327C0 /* main.m */; };
+		2712D9BE17DE3632007327C0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2712D9B617DE3632007327C0 /* main.m */; };
+		2712D9BF17DE3632007327C0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2712D9B617DE3632007327C0 /* main.m */; };
+		2712D9C017DE3632007327C0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2712D9B617DE3632007327C0 /* main.m */; };
+		2727D28E17DE2FF80069F9D2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2727D21017DE2E110069F9D2 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		27E9CF98175E4A4200BD6205 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -63,20 +82,84 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		2712D92D17DE30EF007327C0 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		2712D93D17DE310C007327C0 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		2712D94D17DE311F007327C0 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		2727D28B17DE2FF80069F9D2 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		27048EF0161CB58600C38ADA /* lib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = lib.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		27314C79165328400027850D /* lib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = lib.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		27A43AB415CDCC89001CB13E /* lib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = lib.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		27A43AC415CDCCCB001CB13E /* lib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = lib.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		27C62DCC170B537B0093F260 /* TEMPLATETargetSettings-OSX-32-MRC.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "TEMPLATETargetSettings-OSX-32-MRC.xcconfig"; sourceTree = "<group>"; };
-		27C62DCD170B537B0093F260 /* SharedTargetSettings.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = SharedTargetSettings.xcconfig; sourceTree = "<group>"; };
-		27C62DCE170B537B0093F260 /* TEMPLATETargetSettings-OSX-Universal-MRC.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "TEMPLATETargetSettings-OSX-Universal-MRC.xcconfig"; sourceTree = "<group>"; };
-		27C62DCF170B537B0093F260 /* TEMPLATETargetSettings-OSX-64-ARC.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "TEMPLATETargetSettings-OSX-64-ARC.xcconfig"; sourceTree = "<group>"; };
-		27C62DD0170B537B0093F260 /* TEMPLATETargetSettings-OSX-64-MRC.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "TEMPLATETargetSettings-OSX-64-MRC.xcconfig"; sourceTree = "<group>"; };
-		27C62DD1170B537B0093F260 /* TEMPLATETargetSettings-OSX-iOS-ARC.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "TEMPLATETargetSettings-OSX-iOS-ARC.xcconfig"; sourceTree = "<group>"; };
-		27C7A8A717B6CF2800A83CE2 /* ProjectSettingsDebug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = ProjectSettingsDebug.xcconfig; sourceTree = "<group>"; };
-		27C7A8A817B6CF2800A83CE2 /* ProjectSettingsRelease.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = ProjectSettingsRelease.xcconfig; sourceTree = "<group>"; };
-		27CBC1F416768BA600753D0A /* lib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = lib.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		27048EF0161CB58600C38ADA /* libTEMPLATE-OSX-32-MRC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libTEMPLATE-OSX-32-MRC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2712D92F17DE30EF007327C0 /* TEMPLATE-Test-OSX-Universal-MRC */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "TEMPLATE-Test-OSX-Universal-MRC"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2712D93F17DE310C007327C0 /* TEMPLATE-Test-OSX-64-ARC */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "TEMPLATE-Test-OSX-64-ARC"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2712D94F17DE311F007327C0 /* TEMPLATE-Test-OSX-32-MRC */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "TEMPLATE-Test-OSX-32-MRC"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2712D95F17DE3142007327C0 /* TEMPLATE-Test-iOS-ARC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TEMPLATE-Test-iOS-ARC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2712D99E17DE35FE007327C0 /* SharedTargetSettings.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = SharedTargetSettings.xcconfig; sourceTree = "<group>"; };
+		2712D99F17DE35FE007327C0 /* TEMPLATE-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TEMPLATE-Prefix.pch"; sourceTree = "<group>"; };
+		2712D9A017DE35FE007327C0 /* TEMPLATE-Lib-OSX-32-MRC.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "TEMPLATE-Lib-OSX-32-MRC.xcconfig"; sourceTree = "<group>"; };
+		2712D9A117DE35FE007327C0 /* TEMPLATE-Lib-OSX-64-ARC.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "TEMPLATE-Lib-OSX-64-ARC.xcconfig"; sourceTree = "<group>"; };
+		2712D9A217DE35FE007327C0 /* TEMPLATE-Lib-OSX-64-MRC.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "TEMPLATE-Lib-OSX-64-MRC.xcconfig"; sourceTree = "<group>"; };
+		2712D9A317DE35FE007327C0 /* TEMPLATE-Lib-OSX-iOS-ARC.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "TEMPLATE-Lib-OSX-iOS-ARC.xcconfig"; sourceTree = "<group>"; };
+		2712D9A417DE35FE007327C0 /* TEMPLATE-Lib-OSX-Universal-MRC.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "TEMPLATE-Lib-OSX-Universal-MRC.xcconfig"; sourceTree = "<group>"; };
+		2712D9A617DE360D007327C0 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2712D9A717DE360D007327C0 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2712D9A917DE360D007327C0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2712D9AA17DE360D007327C0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		2712D9AB17DE360D007327C0 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2712D9AC17DE360D007327C0 /* TEMPLATE-Test-iOS-ARC-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "TEMPLATE-Test-iOS-ARC-Info.plist"; sourceTree = "<group>"; };
+		2712D9AD17DE360D007327C0 /* TEMPLATE-Test-iOS-ARC-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TEMPLATE-Test-iOS-ARC-Prefix.pch"; sourceTree = "<group>"; };
+		2712D9AE17DE360D007327C0 /* TEMPLATE-Test-iOS-ARC.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "TEMPLATE-Test-iOS-ARC.xcconfig"; sourceTree = "<group>"; };
+		2712D9B617DE3632007327C0 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2712D9B717DE3632007327C0 /* TEMPLATE-Test-OSX-32-MRC.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "TEMPLATE-Test-OSX-32-MRC.xcconfig"; sourceTree = "<group>"; };
+		2712D9B817DE3632007327C0 /* TEMPLATE-Test-OSX-64-ARC.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "TEMPLATE-Test-OSX-64-ARC.xcconfig"; sourceTree = "<group>"; };
+		2712D9B917DE3632007327C0 /* TEMPLATE-Test-OSX-64-MRC.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "TEMPLATE-Test-OSX-64-MRC.xcconfig"; sourceTree = "<group>"; };
+		2712D9BA17DE3632007327C0 /* TEMPLATE-Test-OSX-Universal-MRC-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TEMPLATE-Test-OSX-Universal-MRC-Prefix.pch"; sourceTree = "<group>"; };
+		2712D9BB17DE3632007327C0 /* TEMPLATE-Test-OSX-Universal-MRC.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "TEMPLATE-Test-OSX-Universal-MRC.xcconfig"; sourceTree = "<group>"; };
+		2712D9BC17DE3632007327C0 /* TEMPLATE_Test_OSX_Universal_MRC.1 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.man; path = TEMPLATE_Test_OSX_Universal_MRC.1; sourceTree = "<group>"; };
+		2712D9C217DE36C8007327C0 /* ProjectSettingsDebug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = ProjectSettingsDebug.xcconfig; sourceTree = "<group>"; };
+		2712D9C317DE36C8007327C0 /* ProjectSettingsRelease.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = ProjectSettingsRelease.xcconfig; sourceTree = "<group>"; };
+		2727D21017DE2E110069F9D2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		2727D24E17DE2EAA0069F9D2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2727D25017DE2EAA0069F9D2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		2727D26517DE2EAA0069F9D2 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		2727D28D17DE2FF80069F9D2 /* TEMPLATE-Test-OSX-64-MRC */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "TEMPLATE-Test-OSX-64-MRC"; sourceTree = BUILT_PRODUCTS_DIR; };
+		27314C79165328400027850D /* libTEMPLATE-OSX-64-ARC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libTEMPLATE-OSX-64-ARC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		27A43AB415CDCC89001CB13E /* libTEMPLATE-iOS-ARC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libTEMPLATE-iOS-ARC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		27A43AC415CDCCCB001CB13E /* libTEMPLATE-OSX-64-MRC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libTEMPLATE-OSX-64-MRC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		27CBC1F416768BA600753D0A /* libTEMPLATE-OSX-Universal-MRC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libTEMPLATE-OSX-Universal-MRC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +167,48 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2712D92C17DE30EF007327C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2712D93017DE30EF007327C0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2712D93C17DE310C007327C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2712D94017DE310C007327C0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2712D94C17DE311F007327C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2712D95017DE311F007327C0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2712D95C17DE3142007327C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2712D96117DE3142007327C0 /* CoreGraphics.framework in Frameworks */,
+				2712D96217DE3142007327C0 /* UIKit.framework in Frameworks */,
+				2712D96017DE3142007327C0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2727D28A17DE2FF80069F9D2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2727D28E17DE2FF80069F9D2 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,20 +243,65 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2731477B1652D2D30027850D /* Supporting Files */ = {
+		2712D99D17DE35FE007327C0 /* TEMPLATE-Lib */ = {
 			isa = PBXGroup;
 			children = (
-				27C7A8A717B6CF2800A83CE2 /* ProjectSettingsDebug.xcconfig */,
-				27C7A8A817B6CF2800A83CE2 /* ProjectSettingsRelease.xcconfig */,
-				27C62DCB170B537B0093F260 /* TEMPLATE */,
+				2712D99E17DE35FE007327C0 /* SharedTargetSettings.xcconfig */,
+				2712D99F17DE35FE007327C0 /* TEMPLATE-Prefix.pch */,
+				2712D9A017DE35FE007327C0 /* TEMPLATE-Lib-OSX-32-MRC.xcconfig */,
+				2712D9A117DE35FE007327C0 /* TEMPLATE-Lib-OSX-64-ARC.xcconfig */,
+				2712D9A217DE35FE007327C0 /* TEMPLATE-Lib-OSX-64-MRC.xcconfig */,
+				2712D9A317DE35FE007327C0 /* TEMPLATE-Lib-OSX-iOS-ARC.xcconfig */,
+				2712D9A417DE35FE007327C0 /* TEMPLATE-Lib-OSX-Universal-MRC.xcconfig */,
 			);
-			name = "Supporting Files";
+			path = "TEMPLATE-Lib";
+			sourceTree = "<group>";
+		};
+		2712D9A517DE360D007327C0 /* TEMPLATE-Test-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				2712D9A617DE360D007327C0 /* AppDelegate.h */,
+				2712D9A717DE360D007327C0 /* AppDelegate.m */,
+				2712D9A817DE360D007327C0 /* InfoPlist.strings */,
+				2712D9AA17DE360D007327C0 /* Images.xcassets */,
+				2712D9AB17DE360D007327C0 /* main.m */,
+				2712D9AC17DE360D007327C0 /* TEMPLATE-Test-iOS-ARC-Info.plist */,
+				2712D9AD17DE360D007327C0 /* TEMPLATE-Test-iOS-ARC-Prefix.pch */,
+				2712D9AE17DE360D007327C0 /* TEMPLATE-Test-iOS-ARC.xcconfig */,
+			);
+			path = "TEMPLATE-Test-iOS";
+			sourceTree = "<group>";
+		};
+		2712D9B517DE3632007327C0 /* TEMPLATE-Test-OSX */ = {
+			isa = PBXGroup;
+			children = (
+				2712D9B617DE3632007327C0 /* main.m */,
+				2712D9B717DE3632007327C0 /* TEMPLATE-Test-OSX-32-MRC.xcconfig */,
+				2712D9B817DE3632007327C0 /* TEMPLATE-Test-OSX-64-ARC.xcconfig */,
+				2712D9B917DE3632007327C0 /* TEMPLATE-Test-OSX-64-MRC.xcconfig */,
+				2712D9BA17DE3632007327C0 /* TEMPLATE-Test-OSX-Universal-MRC-Prefix.pch */,
+				2712D9BB17DE3632007327C0 /* TEMPLATE-Test-OSX-Universal-MRC.xcconfig */,
+				2712D9BC17DE3632007327C0 /* TEMPLATE_Test_OSX_Universal_MRC.1 */,
+			);
+			path = "TEMPLATE-Test-OSX";
+			sourceTree = "<group>";
+		};
+		2712D9C117DE36B6007327C0 /* ProjectSettings */ = {
+			isa = PBXGroup;
+			children = (
+				2712D9C217DE36C8007327C0 /* ProjectSettingsDebug.xcconfig */,
+				2712D9C317DE36C8007327C0 /* ProjectSettingsRelease.xcconfig */,
+			);
+			name = ProjectSettings;
 			sourceTree = "<group>";
 		};
 		27A43A7115CDCC1B001CB13E = {
 			isa = PBXGroup;
 			children = (
-				2731477B1652D2D30027850D /* Supporting Files */,
+				2712D9C117DE36B6007327C0 /* ProjectSettings */,
+				2712D9B517DE3632007327C0 /* TEMPLATE-Test-OSX */,
+				2712D9A517DE360D007327C0 /* TEMPLATE-Test-iOS */,
+				2712D99D17DE35FE007327C0 /* TEMPLATE-Lib */,
 				27A43A7E15CDCC1B001CB13E /* Frameworks */,
 				27A43A7D15CDCC1B001CB13E /* Products */,
 			);
@@ -140,11 +310,16 @@
 		27A43A7D15CDCC1B001CB13E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				27A43AB415CDCC89001CB13E /* lib.a */,
-				27A43AC415CDCCCB001CB13E /* lib.a */,
-				27048EF0161CB58600C38ADA /* lib.a */,
-				27314C79165328400027850D /* lib.a */,
-				27CBC1F416768BA600753D0A /* lib.a */,
+				27A43AB415CDCC89001CB13E /* libTEMPLATE-iOS-ARC.a */,
+				27A43AC415CDCCCB001CB13E /* libTEMPLATE-OSX-64-MRC.a */,
+				27048EF0161CB58600C38ADA /* libTEMPLATE-OSX-32-MRC.a */,
+				27314C79165328400027850D /* libTEMPLATE-OSX-64-ARC.a */,
+				27CBC1F416768BA600753D0A /* libTEMPLATE-OSX-Universal-MRC.a */,
+				2727D28D17DE2FF80069F9D2 /* TEMPLATE-Test-OSX-64-MRC */,
+				2712D92F17DE30EF007327C0 /* TEMPLATE-Test-OSX-Universal-MRC */,
+				2712D93F17DE310C007327C0 /* TEMPLATE-Test-OSX-64-ARC */,
+				2712D94F17DE311F007327C0 /* TEMPLATE-Test-OSX-32-MRC */,
+				2712D95F17DE3142007327C0 /* TEMPLATE-Test-iOS-ARC.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -152,55 +327,15 @@
 		27A43A7E15CDCC1B001CB13E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2727D21017DE2E110069F9D2 /* Foundation.framework */,
+				2727D24E17DE2EAA0069F9D2 /* CoreGraphics.framework */,
+				2727D25017DE2EAA0069F9D2 /* UIKit.framework */,
+				2727D26517DE2EAA0069F9D2 /* XCTest.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		27C62DCB170B537B0093F260 /* TEMPLATE */ = {
-			isa = PBXGroup;
-			children = (
-				27C62DCC170B537B0093F260 /* TEMPLATETargetSettings-OSX-32-MRC.xcconfig */,
-				27C62DCD170B537B0093F260 /* SharedTargetSettings.xcconfig */,
-				27C62DCE170B537B0093F260 /* TEMPLATETargetSettings-OSX-Universal-MRC.xcconfig */,
-				27C62DCF170B537B0093F260 /* TEMPLATETargetSettings-OSX-64-ARC.xcconfig */,
-				27C62DD0170B537B0093F260 /* TEMPLATETargetSettings-OSX-64-MRC.xcconfig */,
-				27C62DD1170B537B0093F260 /* TEMPLATETargetSettings-OSX-iOS-ARC.xcconfig */,
-			);
-			path = TEMPLATE;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
-
-/* Begin PBXHeadersBuildPhase section */
-		27048D11161CB58600C38ADA /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		27314A78165328400027850D /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		27A43AC215CDCCCB001CB13E /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		27CBBFED16768BA600753D0A /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		27048B70161CB58600C38ADA /* TEMPLATE-OSX-32-MRC */ = {
@@ -209,7 +344,6 @@
 			buildPhases = (
 				27048B71161CB58600C38ADA /* Sources */,
 				27048D0F161CB58600C38ADA /* Frameworks */,
-				27048D11161CB58600C38ADA /* Headers */,
 			);
 			buildRules = (
 			);
@@ -217,8 +351,93 @@
 			);
 			name = "TEMPLATE-OSX-32-MRC";
 			productName = FishLampCocoaApp;
-			productReference = 27048EF0161CB58600C38ADA /* lib.a */;
+			productReference = 27048EF0161CB58600C38ADA /* libTEMPLATE-OSX-32-MRC.a */;
 			productType = "com.apple.product-type.library.static";
+		};
+		2712D92E17DE30EF007327C0 /* TEMPLATE-Test-OSX-Universal-MRC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2712D93A17DE30EF007327C0 /* Build configuration list for PBXNativeTarget "TEMPLATE-Test-OSX-Universal-MRC" */;
+			buildPhases = (
+				2712D92B17DE30EF007327C0 /* Sources */,
+				2712D92C17DE30EF007327C0 /* Frameworks */,
+				2712D92D17DE30EF007327C0 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TEMPLATE-Test-OSX-Universal-MRC";
+			productName = "TEMPLATE-Test-OSX-Universal-MRC";
+			productReference = 2712D92F17DE30EF007327C0 /* TEMPLATE-Test-OSX-Universal-MRC */;
+			productType = "com.apple.product-type.tool";
+		};
+		2712D93E17DE310C007327C0 /* TEMPLATE-Test-OSX-64-ARC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2712D94817DE310C007327C0 /* Build configuration list for PBXNativeTarget "TEMPLATE-Test-OSX-64-ARC" */;
+			buildPhases = (
+				2712D93B17DE310C007327C0 /* Sources */,
+				2712D93C17DE310C007327C0 /* Frameworks */,
+				2712D93D17DE310C007327C0 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TEMPLATE-Test-OSX-64-ARC";
+			productName = "TEMPLATE-Test-OSX-64-ARC";
+			productReference = 2712D93F17DE310C007327C0 /* TEMPLATE-Test-OSX-64-ARC */;
+			productType = "com.apple.product-type.tool";
+		};
+		2712D94E17DE311F007327C0 /* TEMPLATE-Test-OSX-32-MRC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2712D95817DE311F007327C0 /* Build configuration list for PBXNativeTarget "TEMPLATE-Test-OSX-32-MRC" */;
+			buildPhases = (
+				2712D94B17DE311F007327C0 /* Sources */,
+				2712D94C17DE311F007327C0 /* Frameworks */,
+				2712D94D17DE311F007327C0 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TEMPLATE-Test-OSX-32-MRC";
+			productName = "TEMPLATE-Test-OSX-32-MRC";
+			productReference = 2712D94F17DE311F007327C0 /* TEMPLATE-Test-OSX-32-MRC */;
+			productType = "com.apple.product-type.tool";
+		};
+		2712D95E17DE3142007327C0 /* TEMPLATE-Test-iOS-ARC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2712D98317DE3143007327C0 /* Build configuration list for PBXNativeTarget "TEMPLATE-Test-iOS-ARC" */;
+			buildPhases = (
+				2712D95B17DE3142007327C0 /* Sources */,
+				2712D95C17DE3142007327C0 /* Frameworks */,
+				2712D95D17DE3142007327C0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TEMPLATE-Test-iOS-ARC";
+			productName = "TEMPLATE-Test-iOS-ARC";
+			productReference = 2712D95F17DE3142007327C0 /* TEMPLATE-Test-iOS-ARC.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2727D28C17DE2FF80069F9D2 /* TEMPLATE-Test-OSX-64-MRC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2727D29617DE2FF80069F9D2 /* Build configuration list for PBXNativeTarget "TEMPLATE-Test-OSX-64-MRC" */;
+			buildPhases = (
+				2727D28917DE2FF80069F9D2 /* Sources */,
+				2727D28A17DE2FF80069F9D2 /* Frameworks */,
+				2727D28B17DE2FF80069F9D2 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TEMPLATE-Test-OSX-64-MRC";
+			productName = "TEMPLATE-Test-OSX-64-MRC";
+			productReference = 2727D28D17DE2FF80069F9D2 /* TEMPLATE-Test-OSX-64-MRC */;
+			productType = "com.apple.product-type.tool";
 		};
 		273148B9165328400027850D /* TEMPLATE-OSX-64-ARC */ = {
 			isa = PBXNativeTarget;
@@ -226,7 +445,6 @@
 			buildPhases = (
 				273148BA165328400027850D /* Sources */,
 				27314A76165328400027850D /* Frameworks */,
-				27314A78165328400027850D /* Headers */,
 			);
 			buildRules = (
 			);
@@ -234,7 +452,7 @@
 			);
 			name = "TEMPLATE-OSX-64-ARC";
 			productName = FishLampCommandLine;
-			productReference = 27314C79165328400027850D /* lib.a */;
+			productReference = 27314C79165328400027850D /* libTEMPLATE-OSX-64-ARC.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		27A43AB315CDCC89001CB13E /* TEMPLATE-iOS-ARC */ = {
@@ -250,7 +468,7 @@
 			);
 			name = "TEMPLATE-iOS-ARC";
 			productName = FishLampiOS;
-			productReference = 27A43AB415CDCC89001CB13E /* lib.a */;
+			productReference = 27A43AB415CDCC89001CB13E /* libTEMPLATE-iOS-ARC.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		27A43AC315CDCCCB001CB13E /* TEMPLATE-OSX-64-MRC */ = {
@@ -259,7 +477,6 @@
 			buildPhases = (
 				27A43AC015CDCCCB001CB13E /* Sources */,
 				27A43AC115CDCCCB001CB13E /* Frameworks */,
-				27A43AC215CDCCCB001CB13E /* Headers */,
 			);
 			buildRules = (
 			);
@@ -267,7 +484,7 @@
 			);
 			name = "TEMPLATE-OSX-64-MRC";
 			productName = FishLampCommandLine;
-			productReference = 27A43AC415CDCCCB001CB13E /* lib.a */;
+			productReference = 27A43AC415CDCCCB001CB13E /* libTEMPLATE-OSX-64-MRC.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		27CBBE2916768BA600753D0A /* TEMPLATE-OSX-Universal-MRC */ = {
@@ -276,7 +493,6 @@
 			buildPhases = (
 				27CBBE2A16768BA600753D0A /* Sources */,
 				27CBBFEC16768BA600753D0A /* Frameworks */,
-				27CBBFED16768BA600753D0A /* Headers */,
 			);
 			buildRules = (
 			);
@@ -284,7 +500,7 @@
 			);
 			name = "TEMPLATE-OSX-Universal-MRC";
 			productName = FishLampCommandLine;
-			productReference = 27CBC1F416768BA600753D0A /* lib.a */;
+			productReference = 27CBC1F416768BA600753D0A /* libTEMPLATE-OSX-Universal-MRC.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -315,9 +531,27 @@
 				273148B9165328400027850D /* TEMPLATE-OSX-64-ARC */,
 				27CBBE2916768BA600753D0A /* TEMPLATE-OSX-Universal-MRC */,
 				27E9CF94175E4A3600BD6205 /* TEMPLATE */,
+				2727D28C17DE2FF80069F9D2 /* TEMPLATE-Test-OSX-64-MRC */,
+				2712D92E17DE30EF007327C0 /* TEMPLATE-Test-OSX-Universal-MRC */,
+				2712D93E17DE310C007327C0 /* TEMPLATE-Test-OSX-64-ARC */,
+				2712D94E17DE311F007327C0 /* TEMPLATE-Test-OSX-32-MRC */,
+				2712D95E17DE3142007327C0 /* TEMPLATE-Test-iOS-ARC */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2712D95D17DE3142007327C0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2712D9B017DE360D007327C0 /* InfoPlist.strings in Resources */,
+				2712D9B117DE360D007327C0 /* Images.xcassets in Resources */,
+				2712D9B317DE360D007327C0 /* TEMPLATE-Test-iOS-ARC-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
 		2747DCAE17B6EC13009630D1 /* ShellScript */ = {
@@ -341,6 +575,47 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2712D92B17DE30EF007327C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2712D9BE17DE3632007327C0 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2712D93B17DE310C007327C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2712D9BF17DE3632007327C0 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2712D94B17DE311F007327C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2712D9C017DE3632007327C0 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2712D95B17DE3142007327C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2712D9B217DE360D007327C0 /* main.m in Sources */,
+				2712D9AF17DE360D007327C0 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2727D28917DE2FF80069F9D2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2712D9BD17DE3632007327C0 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -402,38 +677,119 @@
 		};
 /* End PBXTargetDependency section */
 
+/* Begin PBXVariantGroup section */
+		2712D9A817DE360D007327C0 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2712D9A917DE360D007327C0 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
 		27048EEC161CB58600C38ADA /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 27C62DCC170B537B0093F260 /* TEMPLATETargetSettings-OSX-32-MRC.xcconfig */;
+			baseConfigurationReference = 2712D9A017DE35FE007327C0 /* TEMPLATE-Lib-OSX-32-MRC.xcconfig */;
 			buildSettings = {
 			};
 			name = Debug;
 		};
 		27048EEE161CB58600C38ADA /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 27C62DCC170B537B0093F260 /* TEMPLATETargetSettings-OSX-32-MRC.xcconfig */;
+			baseConfigurationReference = 2712D9A017DE35FE007327C0 /* TEMPLATE-Lib-OSX-32-MRC.xcconfig */;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		2712D93817DE30EF007327C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2712D9BB17DE3632007327C0 /* TEMPLATE-Test-OSX-Universal-MRC.xcconfig */;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		2712D93917DE30EF007327C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2712D9BB17DE3632007327C0 /* TEMPLATE-Test-OSX-Universal-MRC.xcconfig */;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		2712D94917DE310C007327C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2712D9B817DE3632007327C0 /* TEMPLATE-Test-OSX-64-ARC.xcconfig */;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		2712D94A17DE310C007327C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2712D9B817DE3632007327C0 /* TEMPLATE-Test-OSX-64-ARC.xcconfig */;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		2712D95917DE311F007327C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2712D9B717DE3632007327C0 /* TEMPLATE-Test-OSX-32-MRC.xcconfig */;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		2712D95A17DE311F007327C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2712D9B717DE3632007327C0 /* TEMPLATE-Test-OSX-32-MRC.xcconfig */;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		2712D98417DE3143007327C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2712D9AE17DE360D007327C0 /* TEMPLATE-Test-iOS-ARC.xcconfig */;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		2712D98517DE3143007327C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2712D9A317DE35FE007327C0 /* TEMPLATE-Lib-OSX-iOS-ARC.xcconfig */;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		2727D29717DE2FF80069F9D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2712D9B917DE3632007327C0 /* TEMPLATE-Test-OSX-64-MRC.xcconfig */;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		2727D29817DE2FF80069F9D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2712D9B917DE3632007327C0 /* TEMPLATE-Test-OSX-64-MRC.xcconfig */;
 			buildSettings = {
 			};
 			name = Release;
 		};
 		27314C76165328400027850D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 27C62DCF170B537B0093F260 /* TEMPLATETargetSettings-OSX-64-ARC.xcconfig */;
+			baseConfigurationReference = 2712D9A117DE35FE007327C0 /* TEMPLATE-Lib-OSX-64-ARC.xcconfig */;
 			buildSettings = {
 			};
 			name = Debug;
 		};
 		27314C77165328400027850D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 27C62DCF170B537B0093F260 /* TEMPLATETargetSettings-OSX-64-ARC.xcconfig */;
+			baseConfigurationReference = 2712D9A117DE35FE007327C0 /* TEMPLATE-Lib-OSX-64-ARC.xcconfig */;
 			buildSettings = {
 			};
 			name = Release;
 		};
 		27A43A8B15CDCC1B001CB13E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 27C7A8A717B6CF2800A83CE2 /* ProjectSettingsDebug.xcconfig */;
+			baseConfigurationReference = 2712D9C217DE36C8007327C0 /* ProjectSettingsDebug.xcconfig */;
 			buildSettings = {
 				MACH_O_TYPE = staticlib;
 			};
@@ -441,7 +797,7 @@
 		};
 		27A43A8C15CDCC1B001CB13E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 27C7A8A817B6CF2800A83CE2 /* ProjectSettingsRelease.xcconfig */;
+			baseConfigurationReference = 2712D9C317DE36C8007327C0 /* ProjectSettingsRelease.xcconfig */;
 			buildSettings = {
 				MACH_O_TYPE = staticlib;
 			};
@@ -449,42 +805,42 @@
 		};
 		27A43ABE15CDCC89001CB13E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 27C62DD1170B537B0093F260 /* TEMPLATETargetSettings-OSX-iOS-ARC.xcconfig */;
+			baseConfigurationReference = 2712D9A317DE35FE007327C0 /* TEMPLATE-Lib-OSX-iOS-ARC.xcconfig */;
 			buildSettings = {
 			};
 			name = Debug;
 		};
 		27A43ABF15CDCC89001CB13E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 27C62DD1170B537B0093F260 /* TEMPLATETargetSettings-OSX-iOS-ARC.xcconfig */;
+			baseConfigurationReference = 2712D9A317DE35FE007327C0 /* TEMPLATE-Lib-OSX-iOS-ARC.xcconfig */;
 			buildSettings = {
 			};
 			name = Release;
 		};
 		27A43ACD15CDCCCB001CB13E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 27C62DD0170B537B0093F260 /* TEMPLATETargetSettings-OSX-64-MRC.xcconfig */;
+			baseConfigurationReference = 2712D9A217DE35FE007327C0 /* TEMPLATE-Lib-OSX-64-MRC.xcconfig */;
 			buildSettings = {
 			};
 			name = Debug;
 		};
 		27A43ACE15CDCCCB001CB13E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 27C62DD0170B537B0093F260 /* TEMPLATETargetSettings-OSX-64-MRC.xcconfig */;
+			baseConfigurationReference = 2712D9A217DE35FE007327C0 /* TEMPLATE-Lib-OSX-64-MRC.xcconfig */;
 			buildSettings = {
 			};
 			name = Release;
 		};
 		27CBC1F216768BA600753D0A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 27C62DCE170B537B0093F260 /* TEMPLATETargetSettings-OSX-Universal-MRC.xcconfig */;
+			baseConfigurationReference = 2712D9A417DE35FE007327C0 /* TEMPLATE-Lib-OSX-Universal-MRC.xcconfig */;
 			buildSettings = {
 			};
 			name = Debug;
 		};
 		27CBC1F316768BA600753D0A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 27C62DCE170B537B0093F260 /* TEMPLATETargetSettings-OSX-Universal-MRC.xcconfig */;
+			baseConfigurationReference = 2712D9A417DE35FE007327C0 /* TEMPLATE-Lib-OSX-Universal-MRC.xcconfig */;
 			buildSettings = {
 			};
 			name = Release;
@@ -511,6 +867,47 @@
 			buildConfigurations = (
 				27048EEC161CB58600C38ADA /* Debug */,
 				27048EEE161CB58600C38ADA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2712D93A17DE30EF007327C0 /* Build configuration list for PBXNativeTarget "TEMPLATE-Test-OSX-Universal-MRC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2712D93817DE30EF007327C0 /* Debug */,
+				2712D93917DE30EF007327C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		2712D94817DE310C007327C0 /* Build configuration list for PBXNativeTarget "TEMPLATE-Test-OSX-64-ARC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2712D94917DE310C007327C0 /* Debug */,
+				2712D94A17DE310C007327C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		2712D95817DE311F007327C0 /* Build configuration list for PBXNativeTarget "TEMPLATE-Test-OSX-32-MRC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2712D95917DE311F007327C0 /* Debug */,
+				2712D95A17DE311F007327C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		2712D98317DE3143007327C0 /* Build configuration list for PBXNativeTarget "TEMPLATE-Test-iOS-ARC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2712D98417DE3143007327C0 /* Debug */,
+				2712D98517DE3143007327C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		2727D29617DE2FF80069F9D2 /* Build configuration list for PBXNativeTarget "TEMPLATE-Test-OSX-64-MRC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2727D29717DE2FF80069F9D2 /* Debug */,
+				2727D29817DE2FF80069F9D2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

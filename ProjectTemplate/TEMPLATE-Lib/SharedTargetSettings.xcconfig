@@ -11,3 +11,5 @@ MACH_O_TYPE = staticlib
 EXECUTABLE_PREFIX = lib
 EXECUTABLE_EXTENSION = a
 
+// change this for your project
+HEADER_SEARCH_PATHS = $(inherited)
