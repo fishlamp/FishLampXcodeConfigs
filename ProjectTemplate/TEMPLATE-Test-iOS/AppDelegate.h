@@ -1,15 +1,19 @@
 //
 //  AppDelegate.h
-//  TEMPLATE-Test-iOS-ARC
+//  TEMPLATE-Test-iOS
 //
-//  Created by Mike Fullerton on 9/9/13.
+//  Created by Fullerton, Mike on 9/9/13.
 //  Copyright (c) 2013 Mike Fullerton. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
+@class ViewController;
+
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+
+@property (strong, nonatomic) ViewController *viewController;
 
 @end

@@ -1,3 +1,6 @@
 [submodule "Piecemeal-Scripts"]
 	path = Piecemeal-Scripts
 	url = https://github.com/piecemeal/Piecemeal-Scripts
+[submodule "ProjectTemplate/Piecemeal-XcodeConfigs"]
+	path = ProjectTemplate/Piecemeal-XcodeConfigs
+	url = https://github.com/piecemeal/Piecemeal-XcodeConfigs

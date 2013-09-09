@@ -1,12 +1,13 @@
 //
-//  FishLampCocoa-pch.pch
-//  FishLampCocoa
+//  TEMPLATE-Test-PrefixHeader.pch
+//  TEMPLATE
 //
-//  Created by Mike Fullerton on 7/1/13.
+//  Created by Fullerton, Mike on 9/9/13.
 //  Copyright (c) 2013 Mike Fullerton. All rights reserved.
 //
 
 #ifdef __OBJC__
     #import <Foundation/Foundation.h>
     #import <Availability.h>
+    #import "PiecemealCompilerFlagOverrides.h"
 #endif

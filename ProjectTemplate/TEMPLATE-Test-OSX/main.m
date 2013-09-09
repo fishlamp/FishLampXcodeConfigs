@@ -8,14 +8,17 @@
 
 #import <Foundation/Foundation.h>
 
-int main(int argc, const char * argv[])
-{
+
+//extern int FLTestToolMain(int argc, const char *argv[], NSString* bundleIdentifier, NSString* appName, NSString* version);
+
+int main(int argc, const char * argv[]) {
+#pragma unused (argc)
+#pragma unused (argv)
 
     @autoreleasepool {
+        NSLog(@"hello world");
         
-        // insert code here...
-        NSLog(@"Hello, World!");
-        
+//        FLTestToolMain(argc, argv, @"com.mycompany.TEMPLATE", "1.0.0");
     }
     return 0;
 }

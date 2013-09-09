@@ -1,8 +1,8 @@
 //
 //  main.m
-//  TEMPLATE-Test-iOS-ARC
+//  TEMPLATE-Test-iOS
 //
-//  Created by Mike Fullerton on 9/9/13.
+//  Created by Fullerton, Mike on 9/9/13.
 //  Copyright (c) 2013 Mike Fullerton. All rights reserved.
 //
 
@@ -10,7 +10,7 @@
 
 #import "AppDelegate.h"
 
-int main(int argc, char * argv[])
+int main(int argc, char *argv[])
 {
     @autoreleasepool {
         return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));

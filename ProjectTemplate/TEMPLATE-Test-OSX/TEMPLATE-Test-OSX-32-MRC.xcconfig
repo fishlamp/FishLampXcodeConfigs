@@ -6,4 +6,5 @@
 //  Copyright (c) 2013 Mike Fullerton. All rights reserved.
 //
 
-#include "Piecemeal-XcodeConfigs/Configs/Piecemeal-IncludedConfig-TestTool.xcconfig"
+#include "Piecemeal-XcodeConfigs/TargetSettings/Piecemeal-TargetSettings-OSX-32-MRC.xcconfig"
+#include "TEMPLATE-Test-OSX/SharedTargetSettings.xcconfig"
