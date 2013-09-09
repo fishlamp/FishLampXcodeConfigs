@@ -1,15 +1,9 @@
-//
-//  FishLamp.xcconfig
-//  Fishlamp
-//
-//  Created by Mike Fullerton on 6/14/12.
-//  Copyright (c) 2013 GreenTongue Software LLC, Mike Fullerton. 
-//  The FishLamp Framework is released under the MIT License: http://fishlamp.com/license 
-//
 
-FISHLAMP_SETTINGS = FISHLAMP=1
-FISHLAMP_DEBUG =
-FISHLAMP_TEST =
+PIECEMEAL_SETTINGS = PIECEMEAL=1
+PIECEMEAL_DEBUG =
+PIECEMEAL_TEST =
+
+WARNING_CFLAGS = -Wall -Wfloat-equal -Wextra 
 
 ALWAYS_SEARCH_USER_PATHS = NO
 CLANG_ANALYZER_DEADCODE_DEADSTORES = YES
@@ -97,7 +91,6 @@ OTHER_LDFLAGS = -all_load -ObjC
 PRODUCT_NAME = $(TARGET_NAME)
 STRIP_INSTALLED_PRODUCT = NO
 VERSIONING_SYSTEM = apple-generic
-WARNING_CFLAGS = -Wall -Wfloat-equal -Wextra 
 
 // probably want to set this is your project
 HEADER_SEARCH_PATHS = $(inherited)

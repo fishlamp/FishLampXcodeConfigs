@@ -1,15 +1,6 @@
-//
-//  FishLampDebug.xcconfig
-//  Fishlamp
-//
-//  Created by Mike Fullerton on 6/16/12.
-//  Copyright (c) 2013 GreenTongue Software LLC, Mike Fullerton. 
-//  The FishLamp Framework is released under the MIT License: http://fishlamp.com/license 
-//
 
-
-FISHLAMP_DEBUG = DEBUG=1 
-FISHLAMP_TEST = TEST=1
+PIECEMEAL_DEBUG = DEBUG=1
+PIECEMEAL_TEST = TEST=1
 
 GCC_OPTIMIZATION_LEVEL = 0
 ONLY_ACTIVE_ARCH = YES

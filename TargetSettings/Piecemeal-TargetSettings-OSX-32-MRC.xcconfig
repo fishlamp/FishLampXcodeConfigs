@@ -1,11 +1,3 @@
-//
-//  Piecemeal-TargetMac32.xcconfig
-//  FLCore
-//
-//  Created by Mike Fullerton on 11/13/12.
-//  Copyright (c) 2013 GreenTongue Software LLC, Mike Fullerton. 
-//  The Piecemeal- Framework is released under the MIT License: http://fishlamp.com/license 
-//
 
 #include "Piecemeal-XcodeConfigs/Configs/Piecemeal-IncludedConfig-OSX-32.xcconfig"
 #include "Piecemeal-XcodeConfigs/Configs/Piecemeal-IncludedConfig-MRC.xcconfig"
