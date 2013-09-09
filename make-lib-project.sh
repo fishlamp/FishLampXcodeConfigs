@@ -6,6 +6,8 @@ MY_PATH="`( cd \"$MY_PATH\" && pwd )`"
 # currentPath=`pwd`
 # cd "$MY_PATH"
 
+
+echo "## Updating submodule for piecemeal scripts!!"
 git submodule update --init --recursive
 
 python Piecemeal-Scripts/Scripts/Utils/NewProjectFromTemplate.py --template-path ProjectTemplate $@
