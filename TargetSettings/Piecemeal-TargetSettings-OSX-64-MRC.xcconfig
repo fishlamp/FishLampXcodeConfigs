@@ -1,11 +1,11 @@
 //
-//  FishLampTargetMac.xcconfig
+//  Piecemeal-TargetMac.xcconfig
 //  
 //
 //  Created by Mike Fullerton on 11/13/12.
 //
 //
 
-#include "FishLampXcodeConfigs/Configs/FishLampIncludedConfig-OSX-64.xcconfig"
-#include "FishLampXcodeConfigs/Configs/FishLampIncludedConfig-MRC.xcconfig"
-#include "FishLampXcodeConfigs/Configs/FishLampIncludedConfig-Preprocessor.xcconfig"
+#include "Piecemeal-XcodeConfigs/Configs/Piecemeal-IncludedConfig-OSX-64.xcconfig"
+#include "Piecemeal-XcodeConfigs/Configs/Piecemeal-IncludedConfig-MRC.xcconfig"
+#include "Piecemeal-XcodeConfigs/Configs/Piecemeal-IncludedConfig-Preprocessor.xcconfig"

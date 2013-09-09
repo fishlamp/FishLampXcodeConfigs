@@ -1,12 +1,12 @@
 //
-//  FishLampTargetMac32.xcconfig
+//  Piecemeal-TargetMac32.xcconfig
 //  FLCore
 //
 //  Created by Mike Fullerton on 11/13/12.
 //  Copyright (c) 2013 GreenTongue Software LLC, Mike Fullerton. 
-//  The FishLamp Framework is released under the MIT License: http://fishlamp.com/license 
+//  The Piecemeal- Framework is released under the MIT License: http://fishlamp.com/license 
 //
 
-#include "FishLampXcodeConfigs/Configs/FishLampIncludedConfig-OSX-32.xcconfig"
-#include "FishLampXcodeConfigs/Configs/FishLampIncludedConfig-MRC.xcconfig"
-#include "FishLampXcodeConfigs/Configs/FishLampIncludedConfig-Preprocessor.xcconfig"
+#include "Piecemeal-XcodeConfigs/Configs/Piecemeal-IncludedConfig-OSX-32.xcconfig"
+#include "Piecemeal-XcodeConfigs/Configs/Piecemeal-IncludedConfig-MRC.xcconfig"
+#include "Piecemeal-XcodeConfigs/Configs/Piecemeal-IncludedConfig-Preprocessor.xcconfig"

@@ -1,11 +1,11 @@
 //
-//  FishLampTargetiOS.xcconfig
+//  Piecemeal-TargetiOS.xcconfig
 //  
 //
 //  Created by Mike Fullerton on 11/13/12.
 //
 //
 
-#include "FishLampXcodeConfigs/Configs/FishLampIncludedConfig-iOS.xcconfig"
-#include "FishLampXcodeConfigs/Configs/FishLampIncludedConfig-ARC.xcconfig"
-#include "FishLampXcodeConfigs/Configs/FishLampIncludedConfig-Preprocessor.xcconfig"
+#include "Piecemeal-XcodeConfigs/Configs/Piecemeal-IncludedConfig-iOS.xcconfig"
+#include "Piecemeal-XcodeConfigs/Configs/Piecemeal-IncludedConfig-ARC.xcconfig"
+#include "Piecemeal-XcodeConfigs/Configs/Piecemeal-IncludedConfig-Preprocessor.xcconfig"

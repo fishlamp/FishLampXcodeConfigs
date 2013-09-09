@@ -98,6 +98,8 @@ PRODUCT_NAME = $(TARGET_NAME)
 STRIP_INSTALLED_PRODUCT = NO
 VERSIONING_SYSTEM = apple-generic
 WARNING_CFLAGS = -Wall -Wfloat-equal -Wextra 
-HEADER_SEARCH_PATHS = $(inherited) $(BUILT_PRODUCTS_DIR)
+
+// probably want to set this is your project
+HEADER_SEARCH_PATHS = $(inherited)
 
 
