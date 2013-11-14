@@ -3,9 +3,6 @@
 // master switch
 GCC_WARN_INHIBIT_ALL_WARNINGS = NO
 
-// these turn on a bunch of stuff
-// to turn some off at compile time (from precompiled header file), see "PiecemealCompilerFlagsOverrides.h"
-WARNING_CFLAGS = -Wall -Wfloat-equal -Wextra 
 
 // turn on as many as we can stand.
 CLANG_WARN_CONSTANT_CONVERSION = YES
@@ -70,3 +67,27 @@ GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO
 GCC_WARN_UNKNOWN_PRAGMAS = NO
 
 CLANG_WARN_OBJC_MISSING_PROPERTY_SYNTHESIS = YES
+
+// see http://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html
+
+// these turn on a bunch of stuff
+// to turn some off at compile time (from precompiled header file), see "PiecemealCompilerFlagsOverrides.h"
+
+ALMOST_ALL = -Waddress -Warray-bounds -Wc++11-compat -Wchar-subscripts -Wenum-compare -Wimplicit-int -Wimplicit-function-declaration -Wcomment -Wformat -Wmain -Wmaybe-uninitialized -Wmissing-braces -Wnonnull -Wparentheses -Wpointer-sign -Wreorder -Wreturn-type -Wsequence-point -Wsign-compare -Wstrict-aliasing -Wstrict-overflow=1 -Wswitch -Wtrigraphs -Wuninitialized -Wunknown-pragmas -Wvolatile-register-var
+
+// NOTE: -Wall also includes these
+//          -Wunused-function  
+//          -Wunused-label     
+//          -Wunused-value     
+//          -Wunused-variable  
+
+EXTRAS = -Wclobbered -Wempty-body -Wignored-qualifiers -Wmissing-field-initializers -Wmissing-parameter-type -Wold-style-declaration -Woverride-init -Wsign-compare -Wtype-limits -Wuninitialized
+
+
+// NOTE: -Wextra also includes these
+//          -Wunused-parameter (only with -Wunused or -Wall)
+//          -Wunused-but-set-parameter (only with -Wunused or -Wall)
+
+WARNING_CFLAGS = $(inherited) $(ALMOST_ALL) $(EXTRAS)
+
+
