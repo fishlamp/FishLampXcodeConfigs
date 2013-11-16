@@ -8,7 +8,6 @@
 
 /* Begin PBXFileReference section */
 		2712D99517DE33B0007327C0 /* Configs */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Configs; path = ../Configs; sourceTree = "<group>"; };
-		2712D99617DE33B0007327C0 /* Examples */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Examples; path = ../Examples; sourceTree = "<group>"; };
 		2712D99717DE33B0007327C0 /* install-headers.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = "install-headers.sh"; path = "../install-headers.sh"; sourceTree = "<group>"; };
 		2712D99817DE33B0007327C0 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		2712D99917DE33B0007327C0 /* ProjectSettings */ = {isa = PBXFileReference; lastKnownFileType = folder; name = ProjectSettings; path = ../ProjectSettings; sourceTree = "<group>"; };
@@ -21,7 +20,6 @@
 			isa = PBXGroup;
 			children = (
 				2712D99517DE33B0007327C0 /* Configs */,
-				2712D99617DE33B0007327C0 /* Examples */,
 				2712D99717DE33B0007327C0 /* install-headers.sh */,
 				2712D99817DE33B0007327C0 /* LICENSE */,
 				2712D99917DE33B0007327C0 /* ProjectSettings */,
