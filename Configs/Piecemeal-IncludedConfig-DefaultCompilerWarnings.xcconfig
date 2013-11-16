@@ -70,10 +70,9 @@ CLANG_WARN_OBJC_MISSING_PROPERTY_SYNTHESIS = YES
 
 // see http://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html
 
-// these turn on a bunch of stuff
-// to turn some off at compile time (from precompiled header file), see "PiecemealCompilerFlagsOverrides.h"
+SOME = -Wmaybe-uninitialized
 
-ALMOST_ALL = -Waddress -Warray-bounds -Wc++11-compat -Wchar-subscripts -Wenum-compare -Wimplicit-int -Wimplicit-function-declaration -Wcomment -Wformat -Wmain -Wmaybe-uninitialized -Wmissing-braces -Wnonnull -Wparentheses -Wpointer-sign -Wreorder -Wreturn-type -Wsequence-point -Wsign-compare -Wstrict-aliasing -Wstrict-overflow=1 -Wswitch -Wtrigraphs -Wuninitialized -Wunknown-pragmas -Wvolatile-register-var
+ALMOST_ALL = -Waddress -Warray-bounds -Wc++11-compat -Wchar-subscripts -Wenum-compare -Wimplicit-int -Wimplicit-function-declaration -Wcomment -Wformat -Wmain  -Wmissing-braces -Wnonnull -Wparentheses -Wpointer-sign -Wreorder -Wreturn-type -Wsequence-point -Wsign-compare -Wstrict-aliasing -Wstrict-overflow=1 -Wswitch -Wtrigraphs -Wuninitialized -Wunknown-pragmas -Wvolatile-register-var
 
 // NOTE: -Wall also includes these
 //          -Wunused-function  
@@ -81,8 +80,9 @@ ALMOST_ALL = -Waddress -Warray-bounds -Wc++11-compat -Wchar-subscripts -Wenum-co
 //          -Wunused-value     
 //          -Wunused-variable  
 
-EXTRAS = -Wclobbered -Wempty-body -Wignored-qualifiers -Wmissing-field-initializers -Wmissing-parameter-type -Wold-style-declaration -Woverride-init -Wsign-compare -Wtype-limits -Wuninitialized
+EXTRAS_OTHER = -Wclobbered -Wmissing-parameter-type  -Wold-style-declaration -Woverride-init
 
+EXTRAS =  -Wempty-body -Wignored-qualifiers -Wmissing-field-initializers -Wsign-compare -Wtype-limits
 
 // NOTE: -Wextra also includes these
 //          -Wunused-parameter (only with -Wunused or -Wall)
