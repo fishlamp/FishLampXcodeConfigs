@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "27CBBE2916768BA600753D0A"
-               BuildableName = "libTEMPLATE-OSX-Universal-MRC.a"
-               BlueprintName = "TEMPLATE-OSX-Universal-MRC"
+               BlueprintIdentifier = "27A43AC315CDCCCB001CB13E"
+               BuildableName = "lib.a"
+               BlueprintName = "TEMPLATE-OSX-64-MRC"
                ReferencedContainer = "container:TEMPLATE.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
