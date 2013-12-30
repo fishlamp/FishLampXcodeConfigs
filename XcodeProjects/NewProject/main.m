@@ -146,12 +146,14 @@ BOOL RemoveExtras(NSString* fromPath, NSError** error) {
         @"XcodeBuildSupportConfigs"
     };
 
-    for(int i = 0; i < (sizeof(NSString*) * sizeof(extras)); i++) {
+    for(int i = 0; i < (sizeof(extras) / sizeof(NSString*)); i++) {
+
+        NSString* thePathToRemove = [fromPath stringByAppendingPathComponent:extras[i] ];
 
         NSError* aError = nil;
-        [[NSFileManager defaultManager] removeItemAtPath:[fromPath stringByAppendingPathComponent:extras[i]] error:&aError];
+        [[NSFileManager defaultManager] removeItemAtPath:thePathToRemove error:&aError];
 
-        if(aError) {
+        if(aError && ![aError.domain isEqualToString:NSCocoaErrorDomain] && aError.code != NSFileNoSuchFileError) {
 
             if(error) {
                 *error = aError;
@@ -186,11 +188,11 @@ BOOL CopyTemplate(NSString* from, NSString* name, NSError** error) {
         return NO;
     }
 
-    if(!RemoveExtras(from, error)) {
+    if(!RemoveExtras(newPath, error)) {
         return NO;
     }
 
-    return NO;
+    return YES;
 }
 
 int main(int argc, const char * argv[])
@@ -218,7 +220,8 @@ int main(int argc, const char * argv[])
 
             NSString* settingsPath = [[pathToSelf stringByDeletingLastPathComponent] stringByAppendingPathComponent:@"XcodeBuildSupportConfigs"];
 
-            NSString* newSettingsPath = [workingDir stringByAppendingPathComponent:@"XcodeBuildBuildSupportConfigs"];
+            NSString* newSettingsPath = [[workingDir stringByAppendingPathComponent:newName]
+            stringByAppendingPathComponent:@"XcodeBuildBuildSupportConfigs"];
 
             [[NSFileManager defaultManager] copyItemAtPath:settingsPath toPath:newSettingsPath error:&error];
         }
