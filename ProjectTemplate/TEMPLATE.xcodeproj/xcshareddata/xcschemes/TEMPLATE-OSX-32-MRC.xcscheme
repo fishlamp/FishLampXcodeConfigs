@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0460"
+   LastUpgradeVersion = "0500"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "27048B70161CB58600C38ADA"
-               BuildableName = "lib.a"
+               BuildableName = "libTEMPLATE-OSX-32-MRC.a"
                BlueprintName = "TEMPLATE-OSX-32-MRC"
                ReferencedContainer = "container:TEMPLATE.xcodeproj">
             </BuildableReference>

@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "273148B9165328400027850D"
-               BuildableName = "libTEMPLATE-OSX-64-ARC.a"
-               BlueprintName = "TEMPLATE-OSX-64-ARC"
+               BlueprintIdentifier = "2712D92E17DE30EF007327C0"
+               BuildableName = "TEMPLATE-TestApp-OSX-Universal-MRC"
+               BlueprintName = "TEMPLATE-TestApp-OSX-Universal-MRC"
                ReferencedContainer = "container:TEMPLATE.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -29,6 +29,15 @@
       buildConfiguration = "Debug">
       <Testables>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "2712D92E17DE30EF007327C0"
+            BuildableName = "TEMPLATE-TestApp-OSX-Universal-MRC"
+            BlueprintName = "TEMPLATE-TestApp-OSX-Universal-MRC"
+            ReferencedContainer = "container:TEMPLATE.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
    </TestAction>
    <LaunchAction
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
@@ -39,6 +48,15 @@
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       allowLocationSimulation = "YES">
+      <BuildableProductRunnable>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "2712D92E17DE30EF007327C0"
+            BuildableName = "TEMPLATE-TestApp-OSX-Universal-MRC"
+            BlueprintName = "TEMPLATE-TestApp-OSX-Universal-MRC"
+            ReferencedContainer = "container:TEMPLATE.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -48,6 +66,15 @@
       useCustomWorkingDirectory = "NO"
       buildConfiguration = "Release"
       debugDocumentVersioning = "YES">
+      <BuildableProductRunnable>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "2712D92E17DE30EF007327C0"
+            BuildableName = "TEMPLATE-TestApp-OSX-Universal-MRC"
+            BlueprintName = "TEMPLATE-TestApp-OSX-Universal-MRC"
+            ReferencedContainer = "container:TEMPLATE.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

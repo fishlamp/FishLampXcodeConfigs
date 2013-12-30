@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "273148B9165328400027850D"
-               BuildableName = "libTEMPLATE-OSX-64-ARC.a"
-               BlueprintName = "TEMPLATE-OSX-64-ARC"
-               ReferencedContainer = "container:TEMPLATE.xcodeproj">
+               BlueprintIdentifier = "27BDE366187211BF00FAF408"
+               BuildableName = "NewProjectTool"
+               BlueprintName = "NewProjectTool"
+               ReferencedContainer = "container:NewProjectTool.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -29,6 +29,15 @@
       buildConfiguration = "Debug">
       <Testables>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "27BDE366187211BF00FAF408"
+            BuildableName = "NewProjectTool"
+            BlueprintName = "NewProjectTool"
+            ReferencedContainer = "container:NewProjectTool.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
    </TestAction>
    <LaunchAction
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
@@ -39,6 +48,15 @@
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       allowLocationSimulation = "YES">
+      <BuildableProductRunnable>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "27BDE366187211BF00FAF408"
+            BuildableName = "NewProjectTool"
+            BlueprintName = "NewProjectTool"
+            ReferencedContainer = "container:NewProjectTool.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -48,6 +66,15 @@
       useCustomWorkingDirectory = "NO"
       buildConfiguration = "Release"
       debugDocumentVersioning = "YES">
+      <BuildableProductRunnable>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "27BDE366187211BF00FAF408"
+            BuildableName = "NewProjectTool"
+            BlueprintName = "NewProjectTool"
+            ReferencedContainer = "container:NewProjectTool.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

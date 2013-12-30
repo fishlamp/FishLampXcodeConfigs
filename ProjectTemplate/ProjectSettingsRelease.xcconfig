@@ -1,2 +1,2 @@
 
-#include "Piecemeal-XcodeConfigs/ProjectSettings/Piecemeal-ProjectSettingsRelease.xcconfig"
+#include "XcodeBuildSupportConfigs/ProjectSettings/Release.xcconfig"

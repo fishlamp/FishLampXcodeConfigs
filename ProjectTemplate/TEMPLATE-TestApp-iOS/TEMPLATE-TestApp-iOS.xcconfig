@@ -1,0 +1,15 @@
+//
+//  TEMPLATE-TestApp-iOS-ARC.xcconfig
+//  TEMPLATE
+//
+//  Created by Mike Fullerton on 9/9/13.
+//  Copyright (c) 2013 Mike Fullerton. All rights reserved.
+//
+
+#include "XcodeBuildSupportConfigs/TargetSettings/iOS-ARC.xcconfig"
+
+GCC_PRECOMPILE_PREFIX_HEADER = YES
+GCC_PREFIX_HEADER = TEMPLATE-TestApp-iOS/TEMPLATE-TestApp-iOS-Prefix.pch
+
+INFOPLIST_FILE = TEMPLATE-TestApp-iOS/TEMPLATE-TestApp-iOS-Info.plist
+
