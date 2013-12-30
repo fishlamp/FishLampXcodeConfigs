@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "27BDE366187211BF00FAF408"
-               BuildableName = "NewProjectTool"
+               BuildableName = "NewProject"
                BlueprintName = "NewProjectTool"
                ReferencedContainer = "container:NewProjectTool.xcodeproj">
             </BuildableReference>
@@ -43,7 +43,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "27BDE366187211BF00FAF408"
-            BuildableName = "NewProjectTool"
+            BuildableName = "NewProject"
             BlueprintName = "NewProjectTool"
             ReferencedContainer = "container:NewProjectTool.xcodeproj">
          </BuildableReference>
@@ -62,7 +62,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "27BDE366187211BF00FAF408"
-            BuildableName = "NewProjectTool"
+            BuildableName = "NewProject"
             BlueprintName = "NewProjectTool"
             ReferencedContainer = "container:NewProjectTool.xcodeproj">
          </BuildableReference>
@@ -80,7 +80,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "27BDE366187211BF00FAF408"
-            BuildableName = "NewProjectTool"
+            BuildableName = "NewProject"
             BlueprintName = "NewProjectTool"
             ReferencedContainer = "container:NewProjectTool.xcodeproj">
          </BuildableReference>
