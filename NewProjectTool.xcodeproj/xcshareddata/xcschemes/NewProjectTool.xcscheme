@@ -28,6 +28,16 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       buildConfiguration = "Debug">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "279B52E618723938003E866A"
+               BuildableName = "NewProjectTool Tests.xctest"
+               BlueprintName = "NewProjectTool Tests"
+               ReferencedContainer = "container:NewProjectTool.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference

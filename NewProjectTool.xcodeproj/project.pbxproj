@@ -7,11 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		279B52E918723938003E866A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 279B52E818723938003E866A /* XCTest.framework */; };
+		279B52EA18723938003E866A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27BDE36A187211BF00FAF408 /* Foundation.framework */; };
+		279B52EC18723938003E866A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 279B52EB18723938003E866A /* UIKit.framework */; };
+		279B52F218723938003E866A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 279B52F018723938003E866A /* InfoPlist.strings */; };
+		279B52F418723938003E866A /* NewProjectTool_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 279B52F318723938003E866A /* NewProjectTool_Tests.m */; };
 		27BDE36B187211BF00FAF408 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27BDE36A187211BF00FAF408 /* Foundation.framework */; };
 		27BDE36E187211BF00FAF408 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 27BDE36D187211BF00FAF408 /* main.m */; };
 		27BDE372187211BF00FAF408 /* NewProject.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 27BDE371187211BF00FAF408 /* NewProject.1 */; };
 		27BDE3791872242900FAF408 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27BDE3781872242900FAF408 /* CoreServices.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		279B52F618723938003E866A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 27BDE35F187211BF00FAF408 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 27BDE366187211BF00FAF408;
+			remoteInfo = NewProjectTool;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		27BDE365187211BF00FAF408 /* CopyFiles */ = {
@@ -27,6 +42,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		279B52E718723938003E866A /* NewProjectTool Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "NewProjectTool Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		279B52E818723938003E866A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		279B52EB18723938003E866A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		279B52EF18723938003E866A /* NewProjectTool Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NewProjectTool Tests-Info.plist"; sourceTree = "<group>"; };
+		279B52F118723938003E866A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		279B52F318723938003E866A /* NewProjectTool_Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewProjectTool_Tests.m; sourceTree = "<group>"; };
+		279B52F518723938003E866A /* NewProjectTool Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NewProjectTool Tests-Prefix.pch"; sourceTree = "<group>"; };
 		27BDE367187211BF00FAF408 /* NewProjectTool */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = NewProjectTool; sourceTree = BUILT_PRODUCTS_DIR; };
 		27BDE36A187211BF00FAF408 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		27BDE36D187211BF00FAF408 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -36,6 +58,16 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		279B52E418723938003E866A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				279B52E918723938003E866A /* XCTest.framework in Frameworks */,
+				279B52EC18723938003E866A /* UIKit.framework in Frameworks */,
+				279B52EA18723938003E866A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		27BDE364187211BF00FAF408 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -48,10 +80,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		279B52ED18723938003E866A /* NewProjectTool Tests */ = {
+			isa = PBXGroup;
+			children = (
+				279B52F318723938003E866A /* NewProjectTool_Tests.m */,
+				279B52EE18723938003E866A /* Supporting Files */,
+			);
+			path = "NewProjectTool Tests";
+			sourceTree = "<group>";
+		};
+		279B52EE18723938003E866A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				279B52EF18723938003E866A /* NewProjectTool Tests-Info.plist */,
+				279B52F018723938003E866A /* InfoPlist.strings */,
+				279B52F518723938003E866A /* NewProjectTool Tests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		27BDE35E187211BF00FAF408 = {
 			isa = PBXGroup;
 			children = (
 				27BDE36C187211BF00FAF408 /* NewProject */,
+				279B52ED18723938003E866A /* NewProjectTool Tests */,
 				27BDE369187211BF00FAF408 /* Frameworks */,
 				27BDE368187211BF00FAF408 /* Products */,
 			);
@@ -61,6 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				27BDE367187211BF00FAF408 /* NewProjectTool */,
+				279B52E718723938003E866A /* NewProjectTool Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -70,6 +123,8 @@
 			children = (
 				27BDE3781872242900FAF408 /* CoreServices.framework */,
 				27BDE36A187211BF00FAF408 /* Foundation.framework */,
+				279B52E818723938003E866A /* XCTest.framework */,
+				279B52EB18723938003E866A /* UIKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -95,6 +150,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		279B52E618723938003E866A /* NewProjectTool Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 279B52F818723938003E866A /* Build configuration list for PBXNativeTarget "NewProjectTool Tests" */;
+			buildPhases = (
+				279B52E318723938003E866A /* Sources */,
+				279B52E418723938003E866A /* Frameworks */,
+				279B52E518723938003E866A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				279B52F718723938003E866A /* PBXTargetDependency */,
+			);
+			name = "NewProjectTool Tests";
+			productName = "NewProjectTool Tests";
+			productReference = 279B52E718723938003E866A /* NewProjectTool Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		27BDE366187211BF00FAF408 /* NewProjectTool */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 27BDE375187211BF00FAF408 /* Build configuration list for PBXNativeTarget "NewProjectTool" */;
@@ -120,6 +193,11 @@
 			attributes = {
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = FishLamp;
+				TargetAttributes = {
+					279B52E618723938003E866A = {
+						TestTargetID = 27BDE366187211BF00FAF408;
+					};
+				};
 			};
 			buildConfigurationList = 27BDE362187211BF00FAF408 /* Build configuration list for PBXProject "NewProjectTool" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -134,11 +212,31 @@
 			projectRoot = "";
 			targets = (
 				27BDE366187211BF00FAF408 /* NewProjectTool */,
+				279B52E618723938003E866A /* NewProjectTool Tests */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		279B52E518723938003E866A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				279B52F218723938003E866A /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		279B52E318723938003E866A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				279B52F418723938003E866A /* NewProjectTool_Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		27BDE363187211BF00FAF408 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -149,7 +247,71 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		279B52F718723938003E866A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 27BDE366187211BF00FAF408 /* NewProjectTool */;
+			targetProxy = 279B52F618723938003E866A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		279B52F018723938003E866A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				279B52F118723938003E866A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
+		279B52F918723938003E866A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NewProjectTool Tests/NewProjectTool Tests-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "NewProjectTool Tests/NewProjectTool Tests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		279B52FA18723938003E866A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NewProjectTool Tests/NewProjectTool Tests-Prefix.pch";
+				INFOPLIST_FILE = "NewProjectTool Tests/NewProjectTool Tests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
 		27BDE373187211BF00FAF408 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -245,6 +407,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		279B52F818723938003E866A /* Build configuration list for PBXNativeTarget "NewProjectTool Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				279B52F918723938003E866A /* Debug */,
+				279B52FA18723938003E866A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		27BDE362187211BF00FAF408 /* Build configuration list for PBXProject "NewProjectTool" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

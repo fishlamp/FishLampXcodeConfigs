@@ -28,6 +28,16 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       buildConfiguration = "Debug">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "279B52BD187235BD003E866A"
+               BuildableName = "TEMPLATE-Tests-iOS-ARC.xctest"
+               BlueprintName = "TEMPLATE-Tests-iOS-ARC"
+               ReferencedContainer = "container:TEMPLATE.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
