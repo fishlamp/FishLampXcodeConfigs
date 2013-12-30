@@ -33,7 +33,12 @@
 - (void)testExample
 {
     NSLog(@"hello?");
-    
+
+    int val = 0;
+
+    XCTAssert(val == 1);
+
+
     XCTFail(@"No implementation for \"%s\"", __PRETTY_FUNCTION__);
 }
 

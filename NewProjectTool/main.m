@@ -8,33 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-
-//void CopyFolder(NSString* fromFolder, NSString* toFolder) {
-//// move visible contents of folder to archive folder
-//// we can't just move the folder because of the hidden .svn folder.
-//
-//	NSError* err = nil;
-//	NSArray* contents = [[NSFileManager defaultManager] contentsOfDirectoryAtPath:fromFolder error:&err];
-//    if(err) {
-////       FLThrowIfError(err);
-//    }
-//	
-//	for(NSString* item in contents) {
-//		if([item characterAtIndex:0] == '.') {// invisible file or folder
-//			continue;
-//		}
-//	
-//		NSString* srcPath = [fromFolder stringByAppendingPathComponent:item];
-//		NSString* destPath = [toFolder stringByAppendingPathComponent:item];
-//	
-//		[[NSFileManager defaultManager] moveItemAtPath:srcPath toPath:destPath error:&err];
-//        if(err) {
-//           FLThrowIfError(err);
-//        }
-//	}
-//}
-
-
 BOOL CheckFileAtPath(NSString* path) {
 
     CFStringRef fileExtension = (__bridge CFStringRef) [path pathExtension];

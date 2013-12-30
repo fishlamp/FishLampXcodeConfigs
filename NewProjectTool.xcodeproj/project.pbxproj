@@ -7,14 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2751FDEF18723D3600D437BA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2751FDEC18723D3600D437BA /* main.m */; };
 		279B52E918723938003E866A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 279B52E818723938003E866A /* XCTest.framework */; };
 		279B52EA18723938003E866A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27BDE36A187211BF00FAF408 /* Foundation.framework */; };
 		279B52EC18723938003E866A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 279B52EB18723938003E866A /* UIKit.framework */; };
 		279B52F218723938003E866A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 279B52F018723938003E866A /* InfoPlist.strings */; };
 		279B52F418723938003E866A /* NewProjectTool_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 279B52F318723938003E866A /* NewProjectTool_Tests.m */; };
 		27BDE36B187211BF00FAF408 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27BDE36A187211BF00FAF408 /* Foundation.framework */; };
-		27BDE36E187211BF00FAF408 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 27BDE36D187211BF00FAF408 /* main.m */; };
-		27BDE372187211BF00FAF408 /* NewProject.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 27BDE371187211BF00FAF408 /* NewProject.1 */; };
 		27BDE3791872242900FAF408 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27BDE3781872242900FAF408 /* CoreServices.framework */; };
 /* End PBXBuildFile section */
 
@@ -35,13 +34,15 @@
 			dstPath = /usr/share/man/man1/;
 			dstSubfolderSpec = 0;
 			files = (
-				27BDE372187211BF00FAF408 /* NewProject.1 in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2751FDEC18723D3600D437BA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2751FDED18723D3600D437BA /* NewProject.1 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.man; path = NewProject.1; sourceTree = "<group>"; };
+		2751FDEE18723D3600D437BA /* NewProjectTool-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NewProjectTool-Prefix.pch"; sourceTree = "<group>"; };
 		279B52E718723938003E866A /* NewProjectTool Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "NewProjectTool Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		279B52E818723938003E866A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		279B52EB18723938003E866A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
@@ -51,9 +52,6 @@
 		279B52F518723938003E866A /* NewProjectTool Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NewProjectTool Tests-Prefix.pch"; sourceTree = "<group>"; };
 		27BDE367187211BF00FAF408 /* NewProjectTool */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = NewProjectTool; sourceTree = BUILT_PRODUCTS_DIR; };
 		27BDE36A187211BF00FAF408 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		27BDE36D187211BF00FAF408 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		27BDE370187211BF00FAF408 /* NewProjectTool-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NewProjectTool-Prefix.pch"; sourceTree = "<group>"; };
-		27BDE371187211BF00FAF408 /* NewProject.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = NewProject.1; sourceTree = "<group>"; };
 		27BDE3781872242900FAF408 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -80,6 +78,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2751FDEB18723D3600D437BA /* NewProjectTool */ = {
+			isa = PBXGroup;
+			children = (
+				2751FDEC18723D3600D437BA /* main.m */,
+				2751FDED18723D3600D437BA /* NewProject.1 */,
+				2751FDEE18723D3600D437BA /* NewProjectTool-Prefix.pch */,
+			);
+			path = NewProjectTool;
+			sourceTree = "<group>";
+		};
 		279B52ED18723938003E866A /* NewProjectTool Tests */ = {
 			isa = PBXGroup;
 			children = (
@@ -102,7 +110,7 @@
 		27BDE35E187211BF00FAF408 = {
 			isa = PBXGroup;
 			children = (
-				27BDE36C187211BF00FAF408 /* NewProject */,
+				2751FDEB18723D3600D437BA /* NewProjectTool */,
 				279B52ED18723938003E866A /* NewProjectTool Tests */,
 				27BDE369187211BF00FAF408 /* Frameworks */,
 				27BDE368187211BF00FAF408 /* Products */,
@@ -127,24 +135,6 @@
 				279B52EB18723938003E866A /* UIKit.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		27BDE36C187211BF00FAF408 /* NewProject */ = {
-			isa = PBXGroup;
-			children = (
-				27BDE36D187211BF00FAF408 /* main.m */,
-				27BDE371187211BF00FAF408 /* NewProject.1 */,
-				27BDE36F187211BF00FAF408 /* Supporting Files */,
-			);
-			path = NewProject;
-			sourceTree = "<group>";
-		};
-		27BDE36F187211BF00FAF408 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				27BDE370187211BF00FAF408 /* NewProjectTool-Prefix.pch */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -241,7 +231,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				27BDE36E187211BF00FAF408 /* main.m in Sources */,
+				2751FDEF18723D3600D437BA /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,6 +404,7 @@
 				279B52FA18723938003E866A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		27BDE362187211BF00FAF408 /* Build configuration list for PBXProject "NewProjectTool" */ = {
 			isa = XCConfigurationList;
