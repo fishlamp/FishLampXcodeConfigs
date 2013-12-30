@@ -50,7 +50,7 @@
 		279B52F118723938003E866A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		279B52F318723938003E866A /* NewProjectTool_Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewProjectTool_Tests.m; sourceTree = "<group>"; };
 		279B52F518723938003E866A /* NewProjectTool Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NewProjectTool Tests-Prefix.pch"; sourceTree = "<group>"; };
-		27BDE367187211BF00FAF408 /* NewProjectTool */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = NewProjectTool; sourceTree = BUILT_PRODUCTS_DIR; };
+		27BDE367187211BF00FAF408 /* NewProject */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = NewProject; sourceTree = BUILT_PRODUCTS_DIR; };
 		27BDE36A187211BF00FAF408 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		27BDE3781872242900FAF408 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -120,7 +120,7 @@
 		27BDE368187211BF00FAF408 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				27BDE367187211BF00FAF408 /* NewProjectTool */,
+				27BDE367187211BF00FAF408 /* NewProject */,
 				279B52E718723938003E866A /* NewProjectTool Tests.xctest */,
 			);
 			name = Products;
@@ -172,7 +172,7 @@
 			);
 			name = NewProjectTool;
 			productName = NewProject;
-			productReference = 27BDE367187211BF00FAF408 /* NewProjectTool */;
+			productReference = 27BDE367187211BF00FAF408 /* NewProject */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -378,7 +378,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "NewProject/NewProjectTool-Prefix.pch";
 				INSTALL_PATH = "$(PROJECT_DIR)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = NewProject;
 			};
 			name = Debug;
 		};
@@ -390,7 +390,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "NewProject/NewProjectTool-Prefix.pch";
 				INSTALL_PATH = "$(PROJECT_DIR)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = NewProject;
 			};
 			name = Release;
 		};
