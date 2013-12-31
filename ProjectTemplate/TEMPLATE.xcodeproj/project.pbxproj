@@ -49,16 +49,6 @@
 		279B52BF187235BE003E866A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2727D26517DE2EAA0069F9D2 /* XCTest.framework */; };
 		279B52C0187235BE003E866A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2727D21017DE2E110069F9D2 /* Foundation.framework */; };
 		279B52C1187235BE003E866A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2727D25017DE2EAA0069F9D2 /* UIKit.framework */; };
-		279B52D918723719003E866A /* TEMPLATETests.m in Sources */ = {isa = PBXBuildFile; fileRef = 279B52D818723719003E866A /* TEMPLATETests.m */; };
-		279B52DA18723719003E866A /* TEMPLATETests.m in Sources */ = {isa = PBXBuildFile; fileRef = 279B52D818723719003E866A /* TEMPLATETests.m */; };
-		279B52DB18723719003E866A /* TEMPLATETests.m in Sources */ = {isa = PBXBuildFile; fileRef = 279B52D818723719003E866A /* TEMPLATETests.m */; };
-		279B52DC18723719003E866A /* TEMPLATETests.m in Sources */ = {isa = PBXBuildFile; fileRef = 279B52D818723719003E866A /* TEMPLATETests.m */; };
-		279B52DD18723719003E866A /* TEMPLATETests.m in Sources */ = {isa = PBXBuildFile; fileRef = 279B52D818723719003E866A /* TEMPLATETests.m */; };
-		279B52DE18723719003E866A /* TEMPLATETests.m in Sources */ = {isa = PBXBuildFile; fileRef = 279B52D818723719003E866A /* TEMPLATETests.m */; };
-		279B52DF18723719003E866A /* TEMPLATETests.m in Sources */ = {isa = PBXBuildFile; fileRef = 279B52D818723719003E866A /* TEMPLATETests.m */; };
-		279B52E018723719003E866A /* TEMPLATETests.m in Sources */ = {isa = PBXBuildFile; fileRef = 279B52D818723719003E866A /* TEMPLATETests.m */; };
-		279B52E118723719003E866A /* TEMPLATETests.m in Sources */ = {isa = PBXBuildFile; fileRef = 279B52D818723719003E866A /* TEMPLATETests.m */; };
-		279B52E218723719003E866A /* TEMPLATETests.m in Sources */ = {isa = PBXBuildFile; fileRef = 279B52D818723719003E866A /* TEMPLATETests.m */; };
 		B214727C17DE7BBC00985872 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2727D25017DE2EAA0069F9D2 /* UIKit.framework */; };
 		B214727D17DE7BBC00985872 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2727D21017DE2E110069F9D2 /* Foundation.framework */; };
 		B214727E17DE7BBC00985872 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2727D24E17DE2EAA0069F9D2 /* CoreGraphics.framework */; };
@@ -71,11 +61,6 @@
 		B214729317DE7BBD00985872 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B214729217DE7BBD00985872 /* ViewController.m */; };
 		B214729617DE7BBD00985872 /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = B214729417DE7BBD00985872 /* ViewController_iPhone.xib */; };
 		B214729917DE7BBD00985872 /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = B214729717DE7BBD00985872 /* ViewController_iPad.xib */; };
-		B2B1436617DE6F3100A8454E /* TEMPLATE.m in Sources */ = {isa = PBXBuildFile; fileRef = B2B1436517DE6F3100A8454E /* TEMPLATE.m */; };
-		B2B1436717DE6F3100A8454E /* TEMPLATE.m in Sources */ = {isa = PBXBuildFile; fileRef = B2B1436517DE6F3100A8454E /* TEMPLATE.m */; };
-		B2B1436817DE6F3100A8454E /* TEMPLATE.m in Sources */ = {isa = PBXBuildFile; fileRef = B2B1436517DE6F3100A8454E /* TEMPLATE.m */; };
-		B2B1436917DE6F3100A8454E /* TEMPLATE.m in Sources */ = {isa = PBXBuildFile; fileRef = B2B1436517DE6F3100A8454E /* TEMPLATE.m */; };
-		B2B1436A17DE6F3100A8454E /* TEMPLATE.m in Sources */ = {isa = PBXBuildFile; fileRef = B2B1436517DE6F3100A8454E /* TEMPLATE.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -251,6 +236,7 @@
 		2727D26517DE2EAA0069F9D2 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		2727D28D17DE2FF80069F9D2 /* TEMPLATE-TestApp-OSX-64-MRC */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "TEMPLATE-TestApp-OSX-64-MRC"; sourceTree = BUILT_PRODUCTS_DIR; };
 		27314C79165328400027850D /* libTEMPLATE-OSX-64-ARC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libTEMPLATE-OSX-64-ARC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		276F6859187371E50072207C /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		279B52801872355C003E866A /* TEMPLATE-Tests-OSX-64-MRC.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TEMPLATE-Tests-OSX-64-MRC.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		279B52841872355C003E866A /* TEMPLATE-Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TEMPLATE-Tests-Info.plist"; sourceTree = "<group>"; };
 		279B52861872355C003E866A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -265,7 +251,6 @@
 		279B52D418723670003E866A /* TEMPLATE-Tests-OSX-64-MRC.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "TEMPLATE-Tests-OSX-64-MRC.xcconfig"; sourceTree = "<group>"; };
 		279B52D518723670003E866A /* TEMPLATE-Tests-OSX-Universal-MRC.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "TEMPLATE-Tests-OSX-Universal-MRC.xcconfig"; sourceTree = "<group>"; };
 		279B52D618723670003E866A /* TEMPLATE-Tests-SharedTargetSettings.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "TEMPLATE-Tests-SharedTargetSettings.xcconfig"; sourceTree = "<group>"; };
-		279B52D818723719003E866A /* TEMPLATETests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TEMPLATETests.m; sourceTree = "<group>"; };
 		27A43AB415CDCC89001CB13E /* libTEMPLATE-iOS-ARC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libTEMPLATE-iOS-ARC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		27A43AC415CDCCCB001CB13E /* libTEMPLATE-OSX-64-MRC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libTEMPLATE-OSX-64-MRC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		27CBC1F416768BA600753D0A /* libTEMPLATE-OSX-Universal-MRC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libTEMPLATE-OSX-Universal-MRC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -284,8 +269,6 @@
 		B214729517DE7BBD00985872 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPhone.xib; sourceTree = "<group>"; };
 		B214729817DE7BBD00985872 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPad.xib; sourceTree = "<group>"; };
 		B263E0E217DE7BF40049EF94 /* TEMPLATE-TestApp-iOS.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "TEMPLATE-TestApp-iOS.xcconfig"; sourceTree = "<group>"; };
-		B2B1436417DE6F3100A8454E /* TEMPLATE.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TEMPLATE.h; sourceTree = "<group>"; };
-		B2B1436517DE6F3100A8454E /* TEMPLATE.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TEMPLATE.m; sourceTree = "<group>"; };
 		B2B1436B17DE701600A8454E /* TEMPLATE-TestApp-SharedTargetSettings.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "TEMPLATE-TestApp-SharedTargetSettings.xcconfig"; sourceTree = "<group>"; };
 		B2B1436C17DE708C00A8454E /* TEMPLATE-TestApp-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TEMPLATE-TestApp-Prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -478,6 +461,7 @@
 		279B52D0187235E3003E866A /* Targets */ = {
 			isa = PBXGroup;
 			children = (
+				2712D9C117DE36B6007327C0 /* ProjectSettings */,
 				2712D99D17DE35FE007327C0 /* TEMPLATE */,
 				B214727F17DE7BBC00985872 /* TEMPLATE-TestApp-iOS */,
 				279B52821872355C003E866A /* TEMPLATE-Tests */,
@@ -486,21 +470,11 @@
 			name = Targets;
 			sourceTree = "<group>";
 		};
-		279B52D7187236F2003E866A /* Tests */ = {
-			isa = PBXGroup;
-			children = (
-				279B52D818723719003E866A /* TEMPLATETests.m */,
-			);
-			name = Tests;
-			sourceTree = "<group>";
-		};
 		27A43A7115CDCC1B001CB13E = {
 			isa = PBXGroup;
 			children = (
-				27FC9DB81872304000F52A74 /* Classes */,
-				279B52D7187236F2003E866A /* Tests */,
+				276F6859187371E50072207C /* Podfile */,
 				279B52D0187235E3003E866A /* Targets */,
-				2712D9C117DE36B6007327C0 /* ProjectSettings */,
 				27A43A7E15CDCC1B001CB13E /* Frameworks */,
 				27A43A7D15CDCC1B001CB13E /* Products */,
 			);
@@ -537,15 +511,6 @@
 				2727D26517DE2EAA0069F9D2 /* XCTest.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		27FC9DB81872304000F52A74 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				B2B1436417DE6F3100A8454E /* TEMPLATE.h */,
-				B2B1436517DE6F3100A8454E /* TEMPLATE.m */,
-			);
-			name = Classes;
 			sourceTree = "<group>";
 		};
 		B214727F17DE7BBC00985872 /* TEMPLATE-TestApp-iOS */ = {
@@ -945,7 +910,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B2B1436717DE6F3100A8454E /* TEMPLATE.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -954,7 +918,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				2712D9BE17DE3632007327C0 /* main.m in Sources */,
-				279B52DA18723719003E866A /* TEMPLATETests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -963,7 +926,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				2712D9BF17DE3632007327C0 /* main.m in Sources */,
-				279B52DB18723719003E866A /* TEMPLATETests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -972,7 +934,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				2712D9C017DE3632007327C0 /* main.m in Sources */,
-				279B52DC18723719003E866A /* TEMPLATETests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -981,7 +942,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				2712D9BD17DE3632007327C0 /* main.m in Sources */,
-				279B52D918723719003E866A /* TEMPLATETests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -989,7 +949,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B2B1436917DE6F3100A8454E /* TEMPLATE.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -997,7 +956,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				279B52DE18723719003E866A /* TEMPLATETests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1005,7 +963,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				279B52DF18723719003E866A /* TEMPLATETests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1013,7 +970,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				279B52E018723719003E866A /* TEMPLATETests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1021,7 +977,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				279B52E118723719003E866A /* TEMPLATETests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1029,7 +984,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				279B52E218723719003E866A /* TEMPLATETests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1037,7 +991,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B2B1436617DE6F3100A8454E /* TEMPLATE.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1045,7 +998,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B2B1436817DE6F3100A8454E /* TEMPLATE.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1053,7 +1005,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B2B1436A17DE6F3100A8454E /* TEMPLATE.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1062,7 +1013,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B214728617DE7BBC00985872 /* main.m in Sources */,
-				279B52DD18723719003E866A /* TEMPLATETests.m in Sources */,
 				B214728A17DE7BBD00985872 /* AppDelegate.m in Sources */,
 				B214729317DE7BBD00985872 /* ViewController.m in Sources */,
 			);

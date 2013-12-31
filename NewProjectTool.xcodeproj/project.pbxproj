@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		2751FDEF18723D3600D437BA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2751FDEC18723D3600D437BA /* main.m */; };
+		2751FFA218735D3000D437BA /* TemplateUpdater.m in Sources */ = {isa = PBXBuildFile; fileRef = 2751FFA118735D3000D437BA /* TemplateUpdater.m */; };
+		2751FFA5187368AB00D437BA /* OldUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 2751FFA4187368AB00D437BA /* OldUtils.m */; };
+		276F6858187370100072207C /* Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 276F6857187370100072207C /* Log.m */; };
 		27BDE36B187211BF00FAF408 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27BDE36A187211BF00FAF408 /* Foundation.framework */; };
 		27BDE3791872242900FAF408 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27BDE3781872242900FAF408 /* CoreServices.framework */; };
 /* End PBXBuildFile section */
@@ -28,6 +31,12 @@
 		2751FDEC18723D3600D437BA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2751FDED18723D3600D437BA /* NewProject.1 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.man; path = NewProject.1; sourceTree = "<group>"; };
 		2751FDEE18723D3600D437BA /* NewProjectTool-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NewProjectTool-Prefix.pch"; sourceTree = "<group>"; };
+		2751FFA018735D3000D437BA /* TemplateUpdater.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TemplateUpdater.h; sourceTree = "<group>"; };
+		2751FFA118735D3000D437BA /* TemplateUpdater.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TemplateUpdater.m; sourceTree = "<group>"; };
+		2751FFA3187368AB00D437BA /* OldUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OldUtils.h; sourceTree = "<group>"; };
+		2751FFA4187368AB00D437BA /* OldUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OldUtils.m; sourceTree = "<group>"; };
+		276F6856187370100072207C /* Log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Log.h; sourceTree = "<group>"; };
+		276F6857187370100072207C /* Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Log.m; sourceTree = "<group>"; };
 		279B52E818723938003E866A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		279B52EB18723938003E866A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		27BDE367187211BF00FAF408 /* NewProject */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = NewProject; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -54,6 +63,12 @@
 				2751FDEC18723D3600D437BA /* main.m */,
 				2751FDED18723D3600D437BA /* NewProject.1 */,
 				2751FDEE18723D3600D437BA /* NewProjectTool-Prefix.pch */,
+				2751FFA018735D3000D437BA /* TemplateUpdater.h */,
+				2751FFA118735D3000D437BA /* TemplateUpdater.m */,
+				2751FFA3187368AB00D437BA /* OldUtils.h */,
+				2751FFA4187368AB00D437BA /* OldUtils.m */,
+				276F6856187370100072207C /* Log.h */,
+				276F6857187370100072207C /* Log.m */,
 			);
 			path = NewProjectTool;
 			sourceTree = "<group>";
@@ -137,7 +152,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2751FFA218735D3000D437BA /* TemplateUpdater.m in Sources */,
 				2751FDEF18723D3600D437BA /* main.m in Sources */,
+				276F6858187370100072207C /* Log.m in Sources */,
+				2751FFA5187368AB00D437BA /* OldUtils.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
