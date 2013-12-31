@@ -243,8 +243,8 @@
 		2712D9B917DE3632007327C0 /* TEMPLATE-TestApp-OSX-64-MRC.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "TEMPLATE-TestApp-OSX-64-MRC.xcconfig"; sourceTree = "<group>"; };
 		2712D9BB17DE3632007327C0 /* TEMPLATE-TestApp-OSX-Universal-MRC.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "TEMPLATE-TestApp-OSX-Universal-MRC.xcconfig"; sourceTree = "<group>"; };
 		2712D9BC17DE3632007327C0 /* TEMPLATE_TestApp.1 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.man; path = TEMPLATE_TestApp.1; sourceTree = "<group>"; };
-		2712D9C217DE36C8007327C0 /* ProjectSettingsDebug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = ProjectSettingsDebug.xcconfig; sourceTree = "<group>"; };
-		2712D9C317DE36C8007327C0 /* ProjectSettingsRelease.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = ProjectSettingsRelease.xcconfig; sourceTree = "<group>"; };
+		2712D9C217DE36C8007327C0 /* TEMPLATEProjectSettingsDebug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = TEMPLATEProjectSettingsDebug.xcconfig; sourceTree = "<group>"; };
+		2712D9C317DE36C8007327C0 /* TEMPLATEProjectSettingsRelease.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = TEMPLATEProjectSettingsRelease.xcconfig; sourceTree = "<group>"; };
 		2727D21017DE2E110069F9D2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		2727D24E17DE2EAA0069F9D2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		2727D25017DE2EAA0069F9D2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
@@ -445,8 +445,8 @@
 		2712D9C117DE36B6007327C0 /* ProjectSettings */ = {
 			isa = PBXGroup;
 			children = (
-				2712D9C217DE36C8007327C0 /* ProjectSettingsDebug.xcconfig */,
-				2712D9C317DE36C8007327C0 /* ProjectSettingsRelease.xcconfig */,
+				2712D9C217DE36C8007327C0 /* TEMPLATEProjectSettingsDebug.xcconfig */,
+				2712D9C317DE36C8007327C0 /* TEMPLATEProjectSettingsRelease.xcconfig */,
 			);
 			name = ProjectSettings;
 			sourceTree = "<group>";
@@ -497,9 +497,9 @@
 		27A43A7115CDCC1B001CB13E = {
 			isa = PBXGroup;
 			children = (
+				27FC9DB81872304000F52A74 /* Classes */,
 				279B52D7187236F2003E866A /* Tests */,
 				279B52D0187235E3003E866A /* Targets */,
-				27FC9DB81872304000F52A74 /* Classes */,
 				2712D9C117DE36B6007327C0 /* ProjectSettings */,
 				27A43A7E15CDCC1B001CB13E /* Frameworks */,
 				27A43A7D15CDCC1B001CB13E /* Products */,
@@ -1679,7 +1679,7 @@
 		};
 		27A43A8B15CDCC1B001CB13E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2712D9C217DE36C8007327C0 /* ProjectSettingsDebug.xcconfig */;
+			baseConfigurationReference = 2712D9C217DE36C8007327C0 /* TEMPLATEProjectSettingsDebug.xcconfig */;
 			buildSettings = {
 				MACH_O_TYPE = staticlib;
 				ONLY_ACTIVE_ARCH = YES;
@@ -1688,7 +1688,7 @@
 		};
 		27A43A8C15CDCC1B001CB13E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2712D9C317DE36C8007327C0 /* ProjectSettingsRelease.xcconfig */;
+			baseConfigurationReference = 2712D9C317DE36C8007327C0 /* TEMPLATEProjectSettingsRelease.xcconfig */;
 			buildSettings = {
 				MACH_O_TYPE = staticlib;
 			};
@@ -1832,6 +1832,7 @@
 				279B528F1872355C003E866A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		279B529918723573003E866A /* Build configuration list for PBXNativeTarget "TEMPLATE-Tests-OSX-64-ARC" */ = {
 			isa = XCConfigurationList;
@@ -1867,6 +1868,7 @@
 				279B52CF187235BE003E866A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		27A43A7615CDCC1B001CB13E /* Build configuration list for PBXProject "TEMPLATE" */ = {
 			isa = XCConfigurationList;

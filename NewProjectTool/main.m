@@ -8,21 +8,72 @@
 
 #import <Foundation/Foundation.h>
 
-BOOL CheckFileAtPath(NSString* path) {
+#define kConfigFolder @"XcodeBuildSupportConfigs"
+#define kProjectTemplate @"ProjectTemplate"
+#define kVerbose 0
+#define kTemplate @"TEMPLATE"
 
-    CFStringRef fileExtension = (__bridge CFStringRef) [path pathExtension];
-    CFStringRef fileUTI = UTTypeCreatePreferredIdentifierForTag(kUTTagClassFilenameExtension, fileExtension, NULL);
+//BOOL CheckFileAtPath(NSString* path) {
+//
+//    return YES;
+//
+////    static NSString* const s_extensions = xcde
+//
+//    CFStringRef fileExtension = (__bridge CFStringRef) [path pathExtension];
+//    CFStringRef fileUTI = UTTypeCreatePreferredIdentifierForTag(kUTTagClassFilenameExtension, fileExtension, NULL);
+//
+//    BOOL checkFile = NO;
+//
+//    if (UTTypeConformsTo(fileUTI, kUTTypeText)) {
+//        checkFile = YES;
+//    }
+//
+//    CFRelease(fileUTI);
+//
+//    return checkFile;
+//
+//}
 
-    BOOL checkFile = NO;
+BOOL FixFileContents(NSString* path, NSString* newName, NSError** error) {
 
-    if (UTTypeConformsTo(fileUTI, kUTTypeText)) {
-        checkFile = YES;
+    NSError* aError = nil;
+    NSString* contents = [NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:&aError];
+
+    if(aError) {
+
+        if([aError.domain isEqualToString:NSCocoaErrorDomain] && aError.code == NSFileReadInapplicableStringEncodingError) {
+            // this means it's not a text file, eg. a JPG., so we'll just skip it.
+            return YES;
+        }
+
+        if(error) {
+            *error = aError;
+        }
+
+        return NO;
     }
 
-    CFRelease(fileUTI);
+    NSString* newContents = [contents stringByReplacingOccurrencesOfString:kTemplate withString:newName];
 
-    return checkFile;
+    if( ![newContents isEqualToString:contents]) {
 
+        [newContents writeToFile:path atomically:YES encoding:NSUTF8StringEncoding error:&aError];
+
+        if(aError) {
+
+            if(error) {
+                *error = aError;
+            }
+
+            return NO;
+        }
+
+#if kVebose
+        NSLog(@"Updated file %@", fullSubPath);
+#endif
+    }
+
+    return YES;
 }
 
 BOOL RenameFolders(NSString* path, NSString* toName, NSError** error) {
@@ -49,30 +100,26 @@ BOOL RenameFolders(NSString* path, NSString* toName, NSError** error) {
         NSString* fullSubPath = [path stringByAppendingPathComponent:item];
 
         BOOL isDir = NO;
-        if( [[NSFileManager defaultManager] fileExistsAtPath:fullSubPath isDirectory:&isDir] && isDir) {
-            if(!RenameFolders(fullSubPath, toName, error)) {
-                return NO;
-            }
-        }
-        else if(CheckFileAtPath(fullSubPath)) {
+        if( [[NSFileManager defaultManager] fileExistsAtPath:fullSubPath isDirectory:&isDir]) {
 
-            NSString* contents = [NSString stringWithContentsOfFile:fullSubPath encoding:NSUTF8StringEncoding error:&aError];
-
-
-            if(aError) {
-
-                if(error) {
-                    *error = aError;
+            if(isDir) {
+                if(!RenameFolders(fullSubPath, toName, error)) {
+                    return NO;
                 }
-
-                return NO;
+            }
+            else {
+                if(!FixFileContents(fullSubPath, toName, error)) {
+                    return NO;
+                }
             }
 
-            NSString* newContents = [contents stringByReplacingOccurrencesOfString:@"TEMPLATE" withString:toName];
+            if([item rangeOfString:kTemplate].length > 0) {
 
-            if( ![newContents isEqualToString:contents]) {
+                NSString* newName = [item stringByReplacingOccurrencesOfString:kTemplate withString:toName];
 
-                [newContents writeToFile:fullSubPath atomically:YES encoding:NSUTF8StringEncoding error:&aError];
+                NSString* newPath = [path stringByAppendingPathComponent:newName];
+
+                [[NSFileManager defaultManager] moveItemAtPath:fullSubPath toPath:newPath error:&aError];
 
                 if(aError) {
 
@@ -83,40 +130,30 @@ BOOL RenameFolders(NSString* path, NSString* toName, NSError** error) {
                     return NO;
                 }
 
-                NSLog(@"Updated file %@", fullSubPath);
+    #if kVebose
+                NSLog(@"Renamed:\n%@\n%@\n", fullSubPath, newPath);
+    #endif
             }
-        }
-
-        if([item rangeOfString:@"TEMPLATE"].length > 0) {
-
-            NSString* newName = [item stringByReplacingOccurrencesOfString:@"TEMPLATE" withString:toName];
-
-            NSString* newPath = [path stringByAppendingPathComponent:newName];
-
-            [[NSFileManager defaultManager] moveItemAtPath:fullSubPath toPath:newPath error:&aError];
-
-            if(aError) {
-
-                if(error) {
-                    *error = aError;
-                }
-
-                return NO;
-            }
-
-            NSLog(@"Renamed:\n%@\n%@\n", fullSubPath, newPath);
-
         }
     }
 
     return YES;
 }
 
+#define CheckError(inError, localError) \
+    do { \
+        if(localError) { \
+            if(inError) { \
+                *inError = localError; \
+            } \
+            return NO; \
+        } \
+    } while(0)
+
 BOOL RemoveExtras(NSString* fromPath, NSError** error) {
 
     static NSString* const extras[] = {
-        @"update-link.sh",
-        @"XcodeBuildSupportConfigs"
+        kConfigFolder
     };
 
     for(int i = 0; i < (sizeof(extras) / sizeof(NSString*)); i++) {
@@ -140,10 +177,7 @@ BOOL RemoveExtras(NSString* fromPath, NSError** error) {
     return YES;
 }
 
-BOOL CopyTemplate(NSString* from, NSString* name, NSError** error) {
-
-
-    NSString* newPath = [[[NSFileManager defaultManager] currentDirectoryPath] stringByAppendingPathComponent:name];
+BOOL CopyTemplate(NSString* from, NSString* newPath, NSError** error) {
 
     NSError* aError = nil;
     [[NSFileManager defaultManager] copyItemAtPath:from toPath:newPath error:&aError];
@@ -157,7 +191,7 @@ BOOL CopyTemplate(NSString* from, NSString* name, NSError** error) {
         return NO;
     }
 
-    if(!RenameFolders(newPath, name, error)) {
+    if(!RenameFolders(newPath, [newPath lastPathComponent], error)) {
         return NO;
     }
 
@@ -168,41 +202,94 @@ BOOL CopyTemplate(NSString* from, NSString* name, NSError** error) {
     return YES;
 }
 
-int main(int argc, const char * argv[])
-{
+BOOL GetYesFromUser() {
+
+    char response = getchar();
+
+    return response == 'y' || response == 'Y';
+}
+
+BOOL RemoveDestinationIfNeeded(NSString* destination, NSError** error) {
+
+    BOOL isDir = NO;
+    if([[NSFileManager defaultManager] fileExistsAtPath:destination isDirectory:&isDir] && isDir) {
+
+        printf("[!] Project already exists at: \"%s\"\n", [destination cStringUsingEncoding:NSUTF8StringEncoding]);
+        printf("[!] Continuing will completely delete and recreate this project.\n");
+        printf("[!] Continue? [Y,N,Q]: ");
+
+        if (GetYesFromUser()) {
+
+            NSError* aError = nil;
+            [[NSFileManager defaultManager] removeItemAtPath:destination error:error];
+
+            if(aError) {
+
+                if(error) {
+                    *error = aError;
+                }
+
+                return NO;
+            }
+
+        }
+        else {
+            printf("[!] bye.\n");
+            exit(1);
+
+            return NO;
+        }
+    }
+
+
+    return YES;
+}
+
+int main(int argc, const char * argv[]) {
 
     @autoreleasepool {
+
+        if(argc < 1) {
+            printf("[!] Usage:\n");
+            printf("    NewProject <DestinationFolder>\n");
+            return 1;
+        }
 
         NSString* workingDir = [[NSFileManager defaultManager] currentDirectoryPath];
 
         NSString* pathToSelf = [workingDir stringByAppendingPathComponent:[NSString stringWithFormat:@"%s", argv[0]]];
 
-        NSString* templatesPath = [[pathToSelf stringByDeletingLastPathComponent] stringByAppendingPathComponent:@"ProjectTemplate"];
+        NSString* templatesPath = [[pathToSelf stringByDeletingLastPathComponent] stringByAppendingPathComponent:kProjectTemplate];
 
-        NSLog(@"path to templates: %@", templatesPath);
-
-        if(argc < 2) {
-            NSLog(@"Expecting name as parameter");
-            return 1;
-        }
+        NSString* settingsPath = [[pathToSelf stringByDeletingLastPathComponent] stringByAppendingPathComponent:kConfigFolder];
 
         NSString* newName = [NSString stringWithFormat:@"%s", argv[1]];
 
+        NSString* newSettingsPath = [[workingDir stringByAppendingPathComponent:newName] stringByAppendingPathComponent:kConfigFolder];
+
+        NSString* destinationPath = [[workingDir stringByAppendingPathComponent:newName] stringByStandardizingPath];
+
+#if kVebose
+        NSLog(@"path to templates: %@", templatesPath);
+#endif
+
         NSError* error = nil;
-        if(CopyTemplate(templatesPath, newName, &error)) {
+        RemoveDestinationIfNeeded(destinationPath, &error);
 
-            NSString* settingsPath = [[pathToSelf stringByDeletingLastPathComponent] stringByAppendingPathComponent:@"XcodeBuildSupportConfigs"];
+        if(!error) {
+            CopyTemplate(templatesPath, destinationPath, &error);
+        }
 
-            NSString* newSettingsPath = [[workingDir stringByAppendingPathComponent:newName]
-            stringByAppendingPathComponent:@"XcodeBuildBuildSupportConfigs"];
-
+        if(!error) {
             [[NSFileManager defaultManager] copyItemAtPath:settingsPath toPath:newSettingsPath error:&error];
         }
 
         if(error) {
-            NSLog(@"%@", error.localizedDescription);
-            return 1;
+            printf("[!] %s\n", [error.localizedDescription cStringUsingEncoding:NSUTF8StringEncoding]);
+            exit(1);
         }
+
+        printf("[!] Installed project at \"%s\"\n", [destinationPath cStringUsingEncoding:NSUTF8StringEncoding]);
 
     }
     return 0;

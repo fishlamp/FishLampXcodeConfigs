@@ -6,9 +6,7 @@
 //  Copyright (c) 2013 Mike Fullerton. All rights reserved.
 //
 
-//#ifdef XCTFail
-
-#if 1
+#if defined(XCTFail)
 
 #import <XCTest/XCTest.h>
 
