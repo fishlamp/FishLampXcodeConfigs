@@ -6,3 +6,5 @@
 
 #include "XcodeBuildSupportConfigs/TargetSettings/OSX-Universal-MRC.xcconfig"
 #include "TEMPLATE/TEMPLATE-SharedTargetSettings.xcconfig"
+
+#include "Pods/Pods-TEMPLATE-OSX-Universal-MRC.config"

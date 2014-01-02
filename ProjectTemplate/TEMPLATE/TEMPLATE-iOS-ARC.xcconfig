@@ -6,3 +6,5 @@
 
 #include "XcodeBuildSupportConfigs/TargetSettings/iOS-ARC.xcconfig"
 #include "TEMPLATE/TEMPLATE-SharedTargetSettings.xcconfig"
+
+#include "Pods/Pods-TEMPLATE-iOS-ARC.config"

@@ -8,18 +8,21 @@
 
 #import <Foundation/Foundation.h>
 
-@interface TemplateUpdater : NSObject
+#import "FLShellScript.h"
 
+#define TemplateUpdaterDefaultString @"TEMPLATE"
+
+@interface TemplateUpdater : FLShellScript
+
+@property (readwrite, strong, nonatomic) NSString* templateString;
+
+@property (readwrite, strong, nonatomic) NSString* projectName;
+@property (readwrite, strong, nonatomic) NSString* destinationPath;
+@property (readwrite, strong, nonatomic) NSString* sourcePath;
 
 @property (readwrite, assign, nonatomic) BOOL verboseOutput;
 @property (readonly, assign, nonatomic) int count;
 @property (readonly, assign, nonatomic) int updatedCount;
-
-// this will throw an exception if it fail.
-- (void) updateFolderAtPath:(NSString*) destinationPath
-           withFolderAtPath:(NSString*) sourcePath
-                withNewName:(NSString*) newName;
-
 
 @end
 

@@ -6,3 +6,5 @@
 
 #include "XcodeBuildSupportConfigs/TargetSettings/OSX-32-MRC.xcconfig"
 #include "TEMPLATE/TEMPLATE-SharedTargetSettings.xcconfig"
+
+#include "Pods/Pods-TEMPLATE-OSX-32-MRC.config"
