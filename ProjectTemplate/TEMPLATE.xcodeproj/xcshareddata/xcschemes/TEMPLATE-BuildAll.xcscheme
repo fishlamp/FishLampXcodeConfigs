@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "27FC9DB91872330C00F52A74"
+               BlueprintIdentifier = "27BFC90E18789C3C00FCD157"
                BuildableName = "TEMPLATE-BuildAll"
                BlueprintName = "TEMPLATE-BuildAll"
                ReferencedContainer = "container:TEMPLATE.xcodeproj">

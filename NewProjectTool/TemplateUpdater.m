@@ -33,6 +33,29 @@
     return self;
 }
 
+- (BOOL) shouldReplaceExistingFileAtPath:(NSString*) path
+                              sourcePath:(NSString*) sourcePath
+                        existingContents:(NSString*) existingContents
+                        templateContents:(NSString*) templateContents {
+
+    if(existingContents == nil || existingContents.length == 0) {
+        return YES;
+    }
+
+    if([newContents isEqualToString:destContents]) {
+        return NO;
+    }
+
+    if([path rangeOfString:@"SharedTargetSettings"].length > 0) {
+        Log(@"Skipping file: %@ (to update this file, delete it first.)", path);
+        return NO;
+    }
+
+
+    return YES;
+}
+
+
 - (void) updateFileAtPath:(NSString*) destinationPath
            withFileAtPath:(NSString*) sourcePath {
 
@@ -59,7 +82,7 @@
             switch (error.code) {
                 case NSFileReadNoSuchFileError:
                 case NSFileNoSuchFileError:
-                    destContents = @"";
+                    destContents = nil;
                     error = nil;
                     break;
             }
@@ -69,7 +92,11 @@
         ThrowError(error);
     }
 
-    if( ![newContents isEqualToString:destContents]) {
+    if( [self shouldReplaceExistingFileAtPath:destinationPath
+                                   sourcePath:sourcePath
+                             existingContents:destContents
+                             templateContents:newContents]) {
+
         [newContents writeToFile:destinationPath atomically:YES encoding:NSUTF8StringEncoding error:&error];
         ThrowError(error);
 

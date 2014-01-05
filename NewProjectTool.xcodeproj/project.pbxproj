@@ -40,7 +40,6 @@
 		276F77AF187496900072207C /* FLShellScript.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FLShellScript.m; path = NewProjectTool/FLShellScript.m; sourceTree = "<group>"; };
 		276F874A1874A8D60072207C /* FLScriptArgsParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FLScriptArgsParser.h; path = NewProjectTool/FLScriptArgsParser.h; sourceTree = "<group>"; };
 		276F874B1874A8D60072207C /* FLScriptArgsParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FLScriptArgsParser.m; path = NewProjectTool/FLScriptArgsParser.m; sourceTree = "<group>"; };
-		276F874D1874A8F60072207C /* ProjectTemplate */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ProjectTemplate; sourceTree = "<group>"; };
 		279B52E818723938003E866A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		279B52EB18723938003E866A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		27BDE367187211BF00FAF408 /* NewProject */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = NewProject; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -91,7 +90,6 @@
 			isa = PBXGroup;
 			children = (
 				276F77A718748AF20072207C /* Classes */,
-				276F874D1874A8F60072207C /* ProjectTemplate */,
 				2751FDEB18723D3600D437BA /* Support Files */,
 				27BDE369187211BF00FAF408 /* Frameworks */,
 				27BDE368187211BF00FAF408 /* Products */,
